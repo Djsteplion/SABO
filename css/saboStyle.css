@@ -1,0 +1,523 @@
+
+:root{
+    --body-pl: 70px;
+    --txt-color-primary: rgba(8,41,124,1);
+}
+
+
+
+
+
+/* Body Style */
+
+.container{
+    width: 100%;
+    border: 1px solid var(--txt-color-primary);
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+/* (1) NavigationBar Container Styles */
+
+.navbar{
+    display: flex;
+    padding-left: var(--body-pl); /* uniform padding-left */
+    border: 0.05px solid var(--txt-color-primary);
+    padding-bottom: 20px;
+    padding-top: 25px;
+    background-color: white;
+    position: fixed;
+    padding-right:0px;
+    margin-top: -8.7px;
+    width: 93.5%;
+}
+
+#Sabo-Logo{
+    width: 53px;
+    height: 22px;
+    padding-top: 10.2px;
+    padding-right: 10px;
+}
+
+#sabo-logo2{
+    padding-top: 6px;
+}
+
+.navButtons{
+    display: flex;
+}
+
+.navButton{
+    padding-left: 30px;
+    display: flex;
+}
+
+.navButton p{
+    padding-left: 10px;
+    margin-top: 9px;
+    color:var(--txt-color-primary);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29.26px;
+    font-family: 'Montserrat',sans-serif;
+    transition: 300ms;
+}
+
+.navButton p:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.signIn{
+    padding-left: 250px;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--txt-color-primary);
+    margin-top: 11px;
+    transition: 300ms;
+}
+
+.signIn:hover{
+    cursor: pointer;
+    animation: ease-out;
+    color: black;
+}
+
+.signUp:hover{
+    cursor: pointer;
+    animation: ease-out;
+    color: var(--txt-color-primary);
+    border:0.1px solid var(--txt-color-primary);
+    background-color: transparent;
+}
+
+.signUp{
+    margin-left: 10px;
+    margin-top: 0px;
+    color: white;
+    width: 109.5px;
+    height: 37px;
+    background-color: var(--txt-color-primary);
+    text-align: center;
+    font-weight: 700;
+    line-height: 29.26px;
+    font-family: 'Montserrat',sans-serif;
+    border-radius: 5px;
+    padding: 10px 15px 5px 15px;
+    transition: 300ms;
+}
+
+
+
+/* (2) Hero Section Container Styles */
+
+.hero{
+    display: flex;
+    background-color: linear-gradient(to right,white,rgba(8,41,124,1));
+}
+
+.hero1-compartment{
+    width: 45%;
+    padding-top: 105px;
+}   
+
+.hero2-compartment{
+   padding-top: 150px;
+   background-image: linear-gradient(to right,white,rgba(8,41,124,1));
+   margin-right: 0px;
+   width: 65%;
+   padding-bottom: 50px;
+}
+
+.hero2-compartment img{
+    width: 730px;
+    height: 530px;
+}
+
+.ctb{
+    display: flex;
+    margin-top: 80px;
+    padding-left: 17px;
+}
+
+.ctb-text{
+    color: var(--txt-color-primary);
+    font-weight: 700;
+    font-size: 20px;
+    padding-top: 21px;
+}
+
+.exchange{
+    padding-left: var(--body-pl);
+}
+
+.exchange h1{
+    color: var(--txt-color-primary);
+    width: 70%;
+    font-size: 40px;
+}
+
+.connectNow{
+    padding: 15px 15px 17px 15px;
+    color: white;
+    font-weight: 600;
+    background-color: var(--txt-color-primary);
+    width: 120px;
+    text-align: center;
+    border-radius: 5px;
+    transition: 300ms;
+}
+
+.connectNow:hover{
+    cursor: pointer;
+    background: transparent;
+    color: var(--txt-color-primary);
+    font-weight: 600;
+    border: 1px solid var(--txt-color-primary);
+}
+
+#networkimg{
+    opacity: 0.1;
+    width: 50%;
+    padding-left: 65px;
+    padding-top: 50px;
+}
+
+
+/* First Service Container Styles */
+
+.services{
+    display: flex;
+    border: 1px solid rgba(8,41,124,1);
+    margin-left: 35px;
+    margin-right: 35px;
+    padding-left: 25px;
+    padding-right: 25px;
+    justify-content: space-between;
+    line-height: 22px;
+    z-index: 100;
+}
+
+.exchange-money{
+    width: 25%;
+}
+
+.sell-or-buy{
+    width: 25%;
+}
+
+.stay-connected{
+    width: 25%;
+}
+
+
+/* Second Service Container Styles */
+
+.services2{
+    border: 1px solid rgba(8,41,124,1);
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 10px;
+    
+}
+
+.what-we{
+    text-align: center;
+}
+
+#what-we-do{
+    margin-top: -145px;
+}
+
+.connect-exchange-updates{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+    line-height: 22px;
+    margin-top: 80px;
+    color: var(--txt-color-primary);
+    font-weight: 600;
+}
+
+.connectYou-text{
+    width: 50%;
+    padding-left: 10px;
+    line-height: 26.82px;
+    font-size: 22px;
+}
+
+.connectAndExchange-text{
+    width: 50%;
+    padding-left: 22px;
+    line-height:26.82px;
+    font-size: 22px;
+}
+
+.exchangeRateUpdates-text{
+    width: 70%;
+    padding-left: 20px;
+    line-height: 26.82px;
+    font-size: 22px;
+}
+
+.locations-around{
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+.trt-image{
+    margin-top: 30px;
+}
+
+.top-rated-price-text{
+    border-top: 1.5px solid rgba(8,41,124,1);
+    border-bottom: 1.5px solid rgba(8,41,124,1);
+    padding-top: 3.4px;
+    padding-bottom: 3.8px;
+   display: flex;
+   background-image:linear-gradient(white,rgba(8,41,124,0.3)); 
+}
+
+.top-rated-text{
+    border-right: 10px solid rgba(8,41,124,1);
+    padding-top: 22px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    font-weight: 600;
+    font-size: 32px;
+    color: rgba(8,41,124,1);
+    line-height: 39.01px;
+}
+
+.top-rated-price{
+    font-weight: 600;
+    font-size: 24px;
+    color: rgba(0,0,1);
+    line-height: 29.26px;  
+    padding-top: 27px;
+    padding-bottom: 17x;
+    padding-left: 30px; 
+}
+
+
+/* Top-Rated Traders Container */
+
+.top-rated-traders-imgAndMsgBtn{
+    background-image:linear-gradient(white,rgba(8,41,124,0.7));
+}
+
+.Tr-Trader-Img-Container1{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+   /*background-image: radial-gradient(rgba(8,41,124,0.1) 55%, rgba(8,41,124,0.05) 3%); */
+}
+
+.trader-avatarAndMsgBtn{
+    width: 19%;
+    margin-left: 60px;
+    text-align: center;
+}
+
+.outer1{
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 100%;
+}
+
+
+.online{
+    width:30px;
+    height: 30px;
+    background-color: green;
+    border-radius: 100%;
+    bottom: 45px;
+    left: 195px;
+    position: relative;
+}
+
+
+
+.outer2{
+    border: 10px solid rgba(18,14,251, 0.1);
+    border-radius: 100%;
+}
+
+.outer3{
+    text-align: center;
+    padding: 10px;
+    border-radius: 100%;
+}
+
+.outer3 img{
+    border-radius: 100%;
+    width: 100%;
+    padding: 0px;
+}
+
+.name-and-location p{
+    font-weight: 700;
+}
+
+.messageBtn{
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29.26px;
+    width: 181px;
+    height: 61px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: rgba(8,41,124,1);
+    border-radius: 25px;
+    transition: 0.5s;
+    margin-left: 30px;
+    text-decoration-line: none;
+}
+
+.messageBtn:hover{
+    color:black ;
+    cursor: pointer;
+}
+
+.showMore{
+    display: flex;
+    margin-top: 20px;
+    margin-right: 120px;
+    justify-content:flex-end;
+}
+
+#showMoreBtn{
+    text-decoration-line: none;
+    color: white;
+    width: 181px;
+    height: 59px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: rgba(8,41,124,1);
+    transition: 0.5s;
+}
+
+#showMoreBtn:hover{
+    cursor: pointer;
+    color: black;
+}
+
+.lowerEndImage{
+    padding-top: -180px;
+    
+    
+}
+
+.lowerEndImage img{ 
+ width: 90%;
+}
+
+
+/* About-Us Container */
+
+.about{
+    display: flex;
+    padding: 40px 80px;
+}
+
+.about-header{
+    font-size: 50px;
+}
+
+.aboutUs-text{
+    width: 50%;
+}
+
+.aboutUs-text p{
+    font-size: 24px;
+    line-height: 29.26px;
+    font-weight: 500;
+}
+
+.aboutUs-image{
+    padding-top: 70px;
+}
+
+/*  Goals And Foresight Container */
+.Goals-and-fores{
+    margin-top: 110px;
+}
+
+.goals-and-foresight-text{
+    text-align: center;
+}
+
+.g-a-f{
+    display: flex;
+    padding: 80px;
+}
+
+.G-A-F{
+    font-size: 50px;
+    color: rgba(8,41,124,1);
+}
+
+.goal{
+    display: flex;
+    border-right: 4px solid rgba(8,41,124,1);
+    width: 95%;
+}
+
+.fores{
+    display: flex;
+    
+}
+
+.goal-text{
+    padding-top: 50px;
+    font-size: 24px;
+    line-height: 29.26px;
+}
+
+.foresight-text{
+    padding-top: 50px; 
+    font-size: 24px;
+    line-height: 29.26px;
+}
+
+.foresight-image{
+    padding-top: 55px;
+}
+
+
+/* Global Image */
+.global-image{
+    text-align: center;
+    margin-top: 110px;
+}
+
+/* Footer  */
+.footer-content{
+    display: flex;
+    justify-content: space-around;
+    background-image: url('C:/Users/User/Desktop/HTML Crashcourse/STEVO/SABO PROJECT/images/Group 1128.png');
+    padding-top: 300px;
+    padding-bottom: 40px;
+}
+
+.footer1 a, .footer2 a, .footer3 a , .footer4 a{
+    display: block;
+    padding-top: 30px;
+    text-decoration-line: none;
+    color: white;
+    font-weight: 500;
+    font-size: 19px;
+    transition: 0.5s;
+}
+
+.footer-content a:hover{
+    text-decoration-line: underline;
+    text-decoration-color:white ;
+}
