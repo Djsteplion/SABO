@@ -500,6 +500,8 @@
     display: flex;
     justify-content: space-around;
     background-repeat: no-repeat!important;
+    background-size: cover!important;
+    width: inherit;
     padding-top: 300px;
     padding-bottom: 40px;
 }
