@@ -499,6 +499,7 @@
 .footer-content{
     display: flex;
     justify-content: space-around;
+    background-repeat: no-repeat!important;
     padding-top: 300px;
     padding-bottom: 40px;
 }
