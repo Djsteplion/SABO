@@ -23,7 +23,8 @@
 
 .navbar{
     display: flex;
-    padding-left: var(--body-pl); /* uniform padding-left */
+    justify-content: space-between;
+    padding-left: var(--body-pl) ; /* uniform padding-left */
     border-bottom: 0.05px solid var(--txt-color-primary);
     padding-bottom: 20px;
     padding-top: 25px;
@@ -32,6 +33,10 @@
     padding-right:0px;
     width:inherit;
     opacity: 1;
+}
+
+.logoAndNav{
+    display: flex;
 }
 
 #Sabo-Logo{
@@ -70,8 +75,13 @@
     cursor: pointer;
 }
 
+.navBtnSigns{
+    display: flex;
+    padding-right: 30px;
+}
+
 .signIn{
-    padding-left: 250px;
+   
     font-size: 24px;
     font-weight: 700;
     color: var(--txt-color-primary);
@@ -499,9 +509,6 @@
 .footer-content{
     display: flex;
     justify-content: space-around;
-    background-repeat: no-repeat!important;
-    background-size: cover!important;
-    width: inherit;
     padding-top: 300px;
     padding-bottom: 40px;
 }
