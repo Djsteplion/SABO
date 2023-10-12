@@ -23,7 +23,7 @@
 
 .navbar{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     padding-left: var(--body-pl) ; /* uniform padding-left */
     border-bottom: 0.05px solid var(--txt-color-primary);
     padding-bottom: 20px;
@@ -39,19 +39,28 @@
     display: flex;
 }
 
+.saboLogo{
+    display: flex;
+    flex-direction:row;
+}
+
 #Sabo-Logo{
-    width: 53px;
-    height: 22px;
+    width: 70px;
+    height: 70px;
     padding-top: 10.2px;
-    padding-right: 10px;
+  
 }
 
 #sabo-logo2{
-    padding-top: 6px;
+    padding-left: 12px;
+    padding-top: 10px;
+    width: 65px;
+    height: 50px;
 }
 
 .navButtons{
     display: flex;
+    padding-top: 16px;
 }
 
 .navButton{
@@ -85,7 +94,7 @@
     font-size: 24px;
     font-weight: 700;
     color: var(--txt-color-primary);
-    margin-top: 11px;
+    margin-top: 21px;
     transition: 300ms;
 }
 
@@ -105,7 +114,7 @@
 
 .signUp{
     margin-left: 10px;
-    margin-top: 0px;
+    margin-top: 10px;
     color: white;
     width: 109.5px;
     height: 37px;
@@ -129,16 +138,16 @@
 }
 
 .hero1-compartment{
-    width: 45%;
+    width: 50%;
     padding-top: 45px;
-    z-index: -2;
+    
 }   
 
 .hero2-compartment{
    padding-top: 90px;
    background-image: linear-gradient(to right,white,rgba(8,41,124,1));
    margin-right: 0px;
-   width: 65%;
+   padding-right: 40px;
    padding-bottom: 150px;
    z-index: -2;
 }
@@ -167,34 +176,46 @@
 
 .exchange h1{
     color: var(--txt-color-primary);
-    width: 70%;
-    font-size: 40px;
+    font-size: 48px;
+    line-height: 58.51px;
 }
 
-.connectNow{
-    padding: 15px 15px 17px 15px;
+.connectsNow{
+    
     color: white;
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29.26px;
     background-color: var(--txt-color-primary);
-    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 219px;
+    height: 74px;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 7px;
     transition: 300ms;
+    margin-left: var(--body-pl);
 }
 
-.connectNow:hover{
-    cursor: pointer;
+.connectsNow:hover{
+    cursor: pointer!important;
     background: transparent;
     color: var(--txt-color-primary);
     font-weight: 600;
     border: 1px solid var(--txt-color-primary);
 }
 
+.networkImg{
+    z-index: -5;
+}
+
 #networkimg{
-    opacity: 0.1;
+    opacity: 0.08;
     width: 50%;
     padding-left: 65px;
-    padding-top: 50px;
+    padding-top: 100px;
+    z-index: -5;
 }
 
 
@@ -203,7 +224,7 @@
 .services{
     display: flex;
     border: 1px solid rgba(8,41,124,1);
-    z-index: 2;
+    z-index: 5;
     margin-top: -60px;
     margin-left: 35px;
     margin-right: 35px;
@@ -341,17 +362,19 @@
 
 .outer1{
     border: 1px solid black;
-    padding: 20px;
+    padding: 16px;
     border-radius: 100%;
 }
 
 .outer2{
-    border: 10px solid seagreen;
+    background-color:rgb(250, 244, 244); 
     border-radius: 100%;
+    
 }
 
 .outer2b{
-    border: 10px solid grey;
+    background-color:rgb(250, 244, 244); 
+    border: 10px ;
     border-radius: 100%;
 }
 
@@ -376,7 +399,21 @@
 
 .name-and-location p{
     font-weight: 700;
+    line-height: 2.5px!important;
 }
+
+.availability{
+    padding: 1px 9px;
+    border-radius: 100%;
+    background-color: green;
+    margin-right: 5px;
+}
+
+.online-presence{
+    padding-bottom: 6px;
+    padding-top: 15px;
+}
+
 
 .messageBtn{
     color: white;
