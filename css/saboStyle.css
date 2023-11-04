@@ -546,6 +546,8 @@
 .footer-content{
     display: flex;
     justify-content: space-around;
+    background-repeat: no-repeat!important;
+    background-size: cover;
     padding-top: 300px;
     padding-bottom: 40px;
 }
