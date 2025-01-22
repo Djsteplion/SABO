@@ -1,0 +1,699 @@
+
+:root{
+    --body-pl: 35px;
+    --txt-color-primary: rgba(8,41,124,1);
+}
+
+
+
+
+
+/* Body Style */
+
+.container{
+    width: 100%;
+    border: 1px solid var(--txt-color-primary);
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.mobileContainer{
+    display: none;
+}
+
+
+/* (1) NavigationBar Container Styles */
+
+.navbar{
+    display: flex;
+    justify-content: space-between; 
+    padding-left: var(--body-pl) ; /* uniform padding-left */
+    border-bottom: 0.05px solid var(--txt-color-primary);
+    padding-bottom: 20px;
+    padding-top: 25px;
+    background-color: white;
+    position: static;
+    padding-right:0px;
+    width:inherit;
+    opacity: 1;
+}
+
+.logoAndNav{
+    display: flex;
+}
+
+.saboLogo{
+    display: flex;
+    flex-direction:row;
+}
+
+#Sabo-Logo{
+    width: 70px;
+    height: 70px;
+    padding-top: 10.2px;
+  
+}
+
+#sabo-logo2{
+    padding-left: 12px;
+    padding-top: 10px;
+    width: 65px;
+    height: 50px;
+}
+
+.navButtons{
+    display: flex;
+    padding-top: 16px;
+}
+
+.navButton{
+    padding-left: 30px;
+    display: flex;
+}
+
+.navButton p{
+    padding-left: 10px;
+    margin-top: 9px;
+    color:var(--txt-color-primary);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29.26px;
+    font-family: 'Montserrat',sans-serif;
+    transition: 300ms;
+}
+
+.navButton p:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.navBtnSigns{
+    display: flex;
+    padding-right: 30px;
+}
+
+.signIn{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--txt-color-primary);
+    margin-top: 26px;
+    transition: 300ms;
+}
+
+.signIn:hover{
+    cursor: pointer;
+    animation: ease-out;
+    color: black;
+}
+
+.signUp:hover{
+    cursor: pointer;
+    animation: ease-out;
+    color: var(--txt-color-primary);
+    background-color: transparent;
+}
+
+.signUp{
+    margin-left: 10px;
+    margin-top: 16px;
+    color: white;
+    width: 109.5px;
+    height: 37px;
+    background-color: var(--txt-color-primary);
+    text-align: center;
+    font-weight: 700;
+    line-height: 29.26px;
+    font-family: 'Montserrat',sans-serif;
+    border-radius: 5px;
+    border:0.001px solid var(--txt-color-primary);
+    padding: 10px 15px 5px 15px;
+    transition: 300ms;
+}
+
+
+
+/* (2) Hero Section Container Styles */
+
+.hero{
+    display: flex;
+    background-color: linear-gradient(to right,white,rgba(8,41,124,1));
+}
+
+.hero1-compartment{
+    padding-top: 2px;
+    width: 50%;
+    
+}   
+
+.hero2-compartment{
+   width: 50%;
+   padding-top: 2px;
+   background-image: linear-gradient(to right,white,rgba(8,41,124,1));
+   margin-right: 0px;
+   padding-right: 20px;
+   padding-left: 10px;
+   padding-bottom: 150px;
+   z-index: -2;
+}
+.currencydisplay{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nairaDis, .yuanDis, .dollarDis{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.nairaD,.yuanD,.dollarD{
+    display: flex;
+    position: relative;
+}
+
+.nairaDi, .yuanDi, .dollarDi{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.ctb{
+    display: flex;
+    margin-top: 80px;
+    padding-left: 17px;
+}
+
+.ctb-text{
+    color: var(--txt-color-primary);
+    font-weight: 700;
+    font-size: 20px;
+    padding-top: 21px;
+}
+
+.exchange{
+    padding-left: var(--body-pl);
+    margin-top: -30px;
+}
+
+.ef{
+    font-size: 64px;
+    font-weight: 700;
+    color: #08297C;
+    line-height: 78.02px;
+}
+
+.oc{
+    color: var(--txt-color-primary);
+    opacity: 0.9;
+    font-size: 43px;
+    line-height: 52.42px;
+    font-weight: 700;
+}
+
+.calculatorExterior{
+    margin-left: var(--body-pl);
+    border: 1px solid black;
+    padding: 30px 0px 30px 20px;
+    margin-right: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+.usdbox{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    border: 1px solid #08297C;
+    width: fit-content;
+    border-radius: 5px;
+}
+
+.usdbox img{
+    padding: 0px 10px;
+}
+
+.usdinput{
+    background-color: #08297C;
+    color: white;
+    padding: 25px 40px 25px 15px;
+    border-style: none;
+    font-size: 25px;
+}
+
+.usdinput::placeholder{
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 39.01px;
+}
+
+.nairabox{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    border: 1px solid #08297C;
+    width: fit-content;
+    border-radius: 5px;
+}
+
+.nairabox img{
+    padding: 0px 10px;
+}
+
+.nairainput{
+    background-color: #08297C;
+    color: white;
+    padding: 25px 40px 25px 15px;
+    border-style: none;
+    font-size: 25px;
+}
+
+.nairainput::placeholder{
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 39.01px;
+}
+
+#swapButton2{
+    display:none;
+}
+
+.rotator:hover{
+    cursor: pointer;
+    transition: ease-in-out 400ms;
+}
+
+
+.connectsNow{
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29.26px;
+    background-color: var(--txt-color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 535px;
+    height: 104px;
+    text-decoration-line: none;
+    border-radius: 7px;
+    transition: 400ms;
+    margin-left: var(--body-pl);
+    margin-top: 40px;
+    
+    border: 1px solid var(--txt-color-primary);
+}
+
+.connectsNow:hover{
+    cursor: pointer!important;
+    background: transparent;
+    color: var(--txt-color-primary);
+    font-weight: 600;
+}
+
+.networkImg{
+    z-index: -5;
+}
+
+#networkimg{
+    opacity: 0.08;
+    width: 50%;
+    padding-left: 65px;
+    padding-top: 100px;
+    z-index: -5;
+}
+
+
+/* First Service Container Styles */
+
+.services{
+    display: flex;
+    border: 1px solid rgba(8,41,124,1);
+    z-index: 5;
+    margin-top: -60px;
+    margin-left: 35px;
+    margin-right: 35px;
+    padding-left: 25px;
+    padding-right: 25px;
+    justify-content: space-between;
+    line-height: 22px;
+    z-index: 100;
+    background-color: white;
+    opacity: 56;
+}
+
+.exchange-money{
+    width: 25%;
+}
+
+.sell-or-buy{
+    width: 25%;
+}
+
+.stay-connected{
+    width: 25%;
+}
+
+
+/* Second Service Container Styles */
+
+.services2{
+    border: 1px solid rgba(8,41,124,1);
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 10px;
+    
+}
+
+.what-we{
+    text-align: center;
+}
+
+#what-we-do{
+    margin-top: -145px;
+}
+
+.connect-exchange-updates{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: black;
+}
+
+.connect-you{
+    margin-top: -120px;
+    width: 32%;
+}
+
+.connectYou-text{
+    padding-left: 10px;
+    line-height: 39.01px;
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.connect-and-exchange{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 32%;
+}
+
+.connectAndExchange-text{
+   
+    text-align: center;
+    line-height:39.01px;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.exchange-rate-updates{
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -120px;
+}
+
+.exchangeRateUpdates-text{
+    text-align: center;
+    line-height:39.01px;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.locations-around{
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+.trt-image{
+    margin-top: 30px;
+}
+
+.top-rated-price-text{
+    border-top: 1.5px solid rgba(8,41,124,1);
+    border-bottom: 1.5px solid rgba(8,41,124,1);
+    padding-top: 3.4px;
+    padding-bottom: 3.8px;
+   display: flex;
+   background-image:linear-gradient(white,rgba(8,41,124,0.3)); 
+}
+
+.top-rated-text{
+    border-right: 10px solid rgba(8,41,124,1);
+    padding-top: 22px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    font-weight: 600;
+    font-size: 32px;
+    color: rgba(8,41,124,1);
+    line-height: 39.01px;
+}
+
+.top-rated-price{
+    font-weight: 600;
+    font-size: 24px;
+    color: rgba(0,0,1);
+    line-height: 29.26px;  
+    padding-top: 27px;
+    padding-bottom: 17x;
+    padding-left: 30px; 
+}
+
+
+/* Top-Rated Traders Container */
+.tradersbox{
+    background-image:linear-gradient(white,rgba(8,41,124,0.7));
+    padding:25px 5px 50px 5px;
+}
+
+.top-rated-traders-imgAndMsgBtn{
+    display: flex;
+    justify-content: space-around;
+}
+
+.Tr-Trader-Img-Container1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    margin-bottom: 25px;
+   /*background-image: radial-gradient(rgba(8,41,124,0.1) 55%, rgba(8,41,124,0.05) 3%); */
+}
+
+.trdname{
+    font-size: 36px;
+    line-height: 43.88px;
+    font-weight: 600;
+    color: black;
+    margin-top: 5px;
+}
+
+.msgTrdBtn{
+    text-decoration-line: none;
+    color: #08297C;
+    width: 416px;
+    height: 89px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29.26px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 5px;
+    background-color: white;
+    transition: 2s;
+}
+
+.msgTrdBtn:hover{
+    transform: rotateY(180deg);
+}
+
+.showmoretraders{
+    justify-content:flex-end;
+    display: flex;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.showmore{
+    text-decoration-line: none;
+    color: #08297C;
+    width: 300px;
+    height: 79px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29.26px;
+    justify-content:flex-end;
+    align-items: center;
+    display: flex;
+    border-radius: 5px;
+    background-color: white;
+    transition: 1.2s;
+    padding-right: 10px;
+}
+
+.showmore:hover{
+    transform: rotateY(180deg);
+}
+
+.wiht{
+    text-align: center;
+    background-color: white;
+    border-radius: 1px;
+    margin: 15px;
+}
+
+.wiht h3{
+    padding-top: 17px;
+    font-size: 26px;
+}
+
+.tandg{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 13px 20px;
+}
+
+.text{
+    margin-top: 50px;
+}
+
+.nairabeatdollar{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.dri{
+    position: relative;
+    margin-left: 5px;
+}
+.ri{
+    position: absolute;
+}
+.ai{
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+
+/* About-Us Container */
+
+.about{
+    display: flex;
+    padding: 40px 80px;
+}
+
+.about-header{
+    font-size: 50px;
+}
+
+.aboutUs-text{
+    width: 50%;
+}
+
+.aboutUs-text p{
+    font-size: 24px;
+    line-height: 29.26px;
+    font-weight: 500;
+}
+
+.aboutUs-image{
+    padding-top: 50px;
+    padding-left: 90px;
+}
+
+/*  Goals And Foresight Container */
+.Goals-and-fores{
+    margin-top: 110px;
+}
+
+.goals-and-foresight-text{
+    text-align: center;
+}
+
+.g-a-f{
+    display: flex;
+    padding: 80px;
+}
+
+.G-A-F{
+    font-size: 50px;
+    color: rgba(8,41,124,1);
+}
+
+.goal{
+    display: flex;
+    border-right: 4px solid rgba(8,41,124,1);
+    width: 95%;
+}
+
+.fores{
+    display: flex;
+    
+}
+
+.goal-text{
+    padding-top: 50px;
+    font-size: 24px;
+    line-height: 29.26px;
+}
+
+.foresight-text{
+    padding-top: 50px; 
+    font-size: 24px;
+    line-height: 29.26px;
+}
+
+.foresight-image{
+    padding-top: 55px;
+}
+
+
+/* Global Image */
+.global-image{
+    text-align: center;
+    margin-top: 110px;
+}
+
+/* Footer  */
+.footer-content{
+    display: flex;
+    justify-content: space-around;
+    background-repeat: no-repeat!important;
+    background-size: cover;
+    padding-top: 300px;
+    padding-bottom: 40px;
+}
+
+.footer1 a, .footer2 a, .footer3 a , .footer4 a{
+    display: block;
+    padding-top: 30px;
+    text-decoration-line: none;
+    color: white;
+    font-weight: 500;
+    font-size: 19px;
+    transition: 0.5s;
+}
+
+.footer-content a:hover{
+    text-decoration-line: underline;
+    text-decoration-color:white ;
+}

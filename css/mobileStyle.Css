@@ -1,0 +1,182 @@
+@media screen and (max-width:800px){
+
+    :root{
+        --body-pl: 5px;
+        --txt-color-primary: rgba(8,41,124,1);
+    }
+
+    .container{
+        display: none;
+    }
+
+    .navbar{
+        padding-left: var(--body-pl) ; /* uniform padding-left */
+        border-bottom: 0.05px solid var(--txt-color-primary);
+        padding-bottom: 10px;
+        padding-top: 5px;
+        background-color: white;
+        position: static;
+        padding-right:0px;
+        width:inherit;
+        opacity: 1;
+    }
+
+    #Sabo-Logo{
+        width: 70px;
+        height: 70px;
+        padding-top: 10.2px;
+      
+    }
+    
+    #sabo-logo2{
+        display: none;
+    }
+
+    .navButton{
+        padding-left: 7px;
+        display: flex;
+    }
+
+    .navBtnSigns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    }
+
+    .signIn{
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--txt-color-primary);
+        margin-top: 16px;
+        transition: 300ms;
+        margin-left: 4px;
+    }
+
+    .signUp{
+        margin-left: 0px;
+        margin-top: 26px;
+        color: white;
+        width: 109.5px;
+        height: 37px;
+        background-color: var(--txt-color-primary);
+        text-align: center;
+        font-weight: 700;
+        line-height: 29.26px;
+        font-family: 'Montserrat',sans-serif;
+        border-radius: 5px;
+        border:0.001px solid var(--txt-color-primary);
+        padding: 10px 15px 5px 15px;
+        transition: 300ms;
+    }
+
+    
+/* (2) Hero Section Container Styles */
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    background-color: linear-gradient(to right,white,rgba(8,41,124,1));
+}
+
+.hero1-compartment{
+    padding-top: 2px;
+    width: 100%; 
+   text-align: center;
+}  
+
+.calculatorExterior{
+    margin-left: var(--body-pl);
+    border: none;
+    padding: 10px;
+    margin-right: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.hero2-compartment{
+    width: 100%!important;
+    padding-top: 20px;
+    text-align: center;
+    background-image: none;
+    background-size: contain;
+    margin-right: 0px;
+    padding-right: 0px;
+    padding-left: 10px;
+    padding-bottom: 50px;
+    z-index: 0;
+ }
+ 
+ .remove{
+    display: none;
+}
+
+.networkImg{
+    display: none;
+}
+
+#networkImg{
+    display: none;
+}
+
+.ctb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.ctb-text{
+    color: var(--txt-color-primary);
+    font-weight: 700;
+    font-size: 20px;
+    padding-top:0px;
+}
+    
+.exchange{
+    padding-left: var(--body-pl);
+    margin-top: 0px;
+    text-align: center;
+}
+
+/* First Service Container Styles */
+
+.services{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(8,41,124,1);
+    z-index: 5;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    justify-content: space-between;
+    line-height: 22px;
+    z-index: 100;
+    background-color: white;
+    opacity: 56;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
