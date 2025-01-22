@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SABO WEBSITE</title>
 
-    <link rel="stylesheet" href="css\saboStyle.css">
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css/mobileStyle.Css">
 </head>
 <body>
 
@@ -85,15 +86,34 @@
             </div>
             <div class="exchange">
                 <h1>
-                    Exchange foreign <br>
-                    currencies & <br>
-                    commodities <br>
-                    within  your <br>
-                    community <br>
+                    <span class="ef">Exchange foreign</span> <br class="remove">
+                    <span class="oc">
+                        currencies & commodities <br class="remove">
+                        within  your community <br class="remove">
+                    </span>
                 </h1>
             </div>
+            <!--Currency Converter-->
+            <div class="calculatorExterior" id="calc">
+                <div class="usdbox" id="usdbox">
+                    <label for="usd"></label>
+                    <input type="number" name=" " id="usd" class="usdinput" placeholder="Enter Amount"> 
+                    <img src="images/Group 1218.png" alt="">
+                </div>
+                <div class="rotator"  id="swapButton" onclick="rotate()">
+                    <img src="images/3d-rotate.png" alt="">
+                </div>
+                <div class="rotator"  id="swapButton2" onclick="rotate2()">
+                    <img src="images/3d-rotate.png" alt="">
+                </div>
+                <div class="nairabox" id="nairabox">
+                    <label for="ngn"></label>
+                    <input type="number" name=" " id="ngn" class="nairainput" placeholder="Enter Amount">
+                    <img src="images/Group 1219.png" alt="">
+                </div>
+            </div>
            
-                    <a class="connectsNow" href="#ActiveTraders">connect now</a>
+            <a class="connectsNow" href="#ActiveTraders">CONNECT NOW</a>
            
             <div class="networkImg">        
             <img src="images\networkImg.png"
@@ -102,7 +122,7 @@
                  
         </div>
         <div class="hero2-compartment">
-            <img src="images\heroimage.png" alt=" " id=" ">
+            <img src="images/Mask group.png" alt=" " id=" ">
         </div>
     </div>
   </div> 
@@ -174,7 +194,7 @@
         </div>
         <div class="connect-exchange-updates">
             <div class="connect-you">
-                <img src="images\connectYou.png"
+                <img src="images/312 1.png"
                      alt=" " id=" ">
                  <div class="connectYou-text">
                     Connect you to a
@@ -184,7 +204,7 @@
                  </div>    
             </div> 
             <div class="connect-and-exchange">
-                <img src="images\conandexch.png"
+                <img src="images/226 1.png"
                      alt=" " id=" ">
                 <div class="connectAndExchange-text">
                    Connect and exchange
@@ -193,17 +213,17 @@
                 </div>      
             </div>
             <div class="exchange-rate-updates">
-                <img src="images\updatesImage.png"
+                <img src="images/Group 1009.png"
                      alt=" " id=" ">
                 <div class="exchangeRateUpdates-text">
                    Exchange
-                   rate updates
+                   rate updates & rates updates.
                 </div>
             </div>
         </div>
         <div class="locations-around-theGlobe">
             <div class="locations-around">
-                <img src="images\locations.png"
+                <img src="images/444 1.png"
                  alt="locations-around-the-globe-image" id="locations-around-Dglobe">
             </div>
         </div>
@@ -224,298 +244,98 @@
           </span>
         </div>
         <div class="top-rated-price">
-            NGN/USD = 625 NGN/USD = 625 NGN/USD = 625 NGN/USD = 625 NGN/USD = 625
+            NGN/USD = 600 NGN/USD = 600 NGN/USD = 1600 NGN/USD = 1600 NGN/USD = 600
         </div>
     </div>
   </div>
 
    <!--This is the Div containing the Pictures/Avatars & Message Button For The Top Rated Traders)-->
-
-   <div class="top-rated-traders-images-and-message-buttons">
-     <div class="top-rated-traders-imgAndMsgBtn">
-       
+    <div class="tradersbox">
+    <div class="top-rated-traders-imgAndMsgBtn">
             <div class="Tr-Trader-Img-Container1"  id="ActiveTraders">
-
-                <div class="trader-avatarAndMsgBtn">
-                    <div class="outer1">
-                        <div class="outer2">
-                            <div class="outer3">
-                                <img src="images\John.jpg" >
-                            </div>
-                        </div>
-                    </div>
-                   
-                    <div class="name-and-location">
-                        <p>Kano Exchange</p>
-                        <p>Oyo Ibadan, N</p>
-                        <div class="online-presence">
-                        <span class="availability" id="availability"></span>
-                        <span class="presence" id="presence">online</span>
-                        </div>
-                        <a href='#'  class="messageBtn">
-                            Message
-                        </a>
-                    </div>
-                    </div>
-
-                <div class="trader-avatarAndMsgBtn">
-                    <div class="outer1">
-                        <div class="outer2b">
-                            <div class="outer3">
-                                <img src="images\John.jpg" >
-                            </div>
-                        </div>
-                    </div>
-                   
-                    <div class="name-and-location">
-                        <p>Kano Exchange</p>
-                        <p>Oyo Ibadan, N</p>
-                        <div class="online-presence">
-                            <span class="availability" id="availability"></span>
-                            <span class="presence" id="presence">online</span>
-                        </div>
-                        <a href='#'  class="messageBtn">
-                            Message
-                        </a>
-                    </div>
-                    </div>
-
-                    <div class="trader-avatarAndMsgBtn">
-                        <div class="outer1">
-                            <div class="outer2">
-                                <div class="outer3">
-                                    <img src="images\John.jpg" >
-                                </div>
-                            </div>
-                        </div>
-                       
-                        <div class="name-and-location">
-                            <p>Kano Exchange</p>
-                            <p>Oyo Ibadan, N</p>
-                            <div class="online-presence">
-                                <span class="availability" id="availability"></span>
-                                <span class="presence" id="presence">online</span>
-                            </div>
-                            <a href='#'  class="messageBtn">
-                                Message
-                            </a>
-                        </div>
-                        </div>
-
-                        <div class="trader-avatarAndMsgBtn">
-                            <div class="outer1">
-                                <div class="outer2b">
-                                    <div class="outer3">
-                                        <img src="images\John.jpg" >
-                                    </div>
-                                </div>
-                            </div>
-                           
-                            <div class="name-and-location">
-                                <p>Kano Exchange</p>
-                                <p>Oyo Ibadan, N</p>
-                                <div class="online-presence">
-                                    <span class="availability" id="availability"></span>
-                                    <span class="presence" id="presence">online</span>
-                                </div>
-                                <a href='#' class="messageBtn">
-                                    Message
-                                </a>
-                            </div>
-                            </div>
+                <img src="images/Frame 1194 (1).png" alt="">
+                <p class="trdname">Babayaro Exchange<br> Ajibode Mokola</p>
+                <a href="#" class="msgTrdBtn">Message</a>
             </div>
             <div class="Tr-Trader-Img-Container1">
-
-                <div class="trader-avatarAndMsgBtn">
-                    <div class="outer1">
-                        <div class="outer2">
-                            <div class="outer3">
-                                <img src="images\John.jpg" >
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="name-and-location">
-                        <p>Kano Exchange</p>
-                        <p>Oyo Ibadan, N</p>
-                        <div class="online-presence">
-                            <span class="availability" id="availability"></span>
-                            <span class="presence" id="presence">online</span>
-                        </div>
-                        <a href='#'  class="messageBtn">
-                            Message
-                        </a>
-                    </div>
-                    </div>
-
-                <div class="trader-avatarAndMsgBtn">
-                    <div class="outer1">
-                        <div class="outer2">
-                            <div class="outer3">
-                                <img src="images\John.jpg" >
-                            </div>
-                        </div>
-                    </div>
-                   
-                    <div class="name-and-location">
-                        <p>Kano Exchange</p>
-                        <p>Oyo Ibadan, N</p>
-                        <div class="online-presence">
-                            <span class="availability" id="availability"></span>
-                            <span class="presence" id="presence">online</span>
-                        </div>
-                        <a href='#'  class="messageBtn">
-                            Message
-                        </a>
-                    </div>
-                    </div>
-
-                    <div class="trader-avatarAndMsgBtn">
-                        <div class="outer1">
-                            <div class="outer2b">
-                                <div class="outer3">
-                                    <img src="images\John.jpg" >
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="name-and-location">
-                            <p>Kano Exchange</p>
-                            <p>Oyo Ibadan, N</p>
-                            <div class="online-presence">
-                                <span class="availability" id="availability"></span>
-                                <span class="presence" id="presence">online</span>
-                            </div>
-                            <a href='#'  class="messageBtn">
-                                Message
-                            </a>
-                        </div>
-                        </div>
-
-                        <div class="trader-avatarAndMsgBtn">
-                            <div class="outer1">
-                                <div class="outer2b">
-                                    <div class="outer3">
-                                        <img src="images\John.jpg" >
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="name-and-location">
-                                <p>Kano Exchange</p>
-                                <p>Oyo Ibadan, N</p>
-                                <div class="online-presence">
-                                    <span class="availability" id="availability"></span>
-                                    <span class="presence" id="presence">online</span>
-                                </div>
-                                <a href='#' class="messageBtn">
-                                    Message
-                                </a>
-                            </div>
-                            </div>
+                <img src="images/Frame 1194.png" alt="">
+                <p class="trdname">Babayaro Exchange<br> Ajibode Mokola</p>
+                <a href="#" class="msgTrdBtn">Message</a>
             </div>
             <div class="Tr-Trader-Img-Container1">
-
-                <div class="trader-avatarAndMsgBtn">
-                    <div class="outer1">
-                        <div class="outer2">
-                            <div class="outer3">
-                                <img src="images\John.jpg" >
-                            </div>
-                        </div>
-                    </div>
-                   
-                    <div class="name-and-location">
-                        <p>Kano Exchange</p>
-                        <p>Oyo Ibadan, N</p>
-                        <div class="online-presence">
-                            <span class="availability" id="availability"></span>
-                            <span class="presence" id="presence">online</span>
-                        </div>
-                        <a href='#'  class="messageBtn">
-                            Message
-                        </a>
-                    </div>
-                    </div>
-
-                <div class="trader-avatarAndMsgBtn">
-                    <div class="outer1">
-                        <div class="outer2b">
-                            <div class="outer3">
-                                <img src="images\John.jpg" >
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="name-and-location">
-                        <p>Kano Exchange</p>
-                        <p>Oyo Ibadan, N</p>
-                        <div class="online-presence">
-                            <span class="availability" id="availability"></span>
-                            <span class="presence" id="presence">online</span>
-                        </div>
-                        <a href='#'  class="messageBtn">
-                            Message
-                        </a>
-                    </div>
-                    </div>
-
-                    <div class="trader-avatarAndMsgBtn">
-                        <div class="outer1">
-                            <div class="outer2b">
-                                <div class="outer3">
-                                    <img src="images\John.jpg" >
-                                </div>
-                            </div>
-                        </div>
-                       
-                        <div class="name-and-location">
-                            <p>Kano Exchange</p>
-                            <p>Oyo Ibadan, N</p>
-                            <div class="online-presence">
-                                <span class="availability" id="availability"></span>
-                                <span class="presence" id="presence">online</span>
-                            </div>
-                            <a href='#'  class="messageBtn">
-                                Message
-                            </a>
-                        </div>
-                        </div>
-
-                        <div class="trader-avatarAndMsgBtn">
-                            <div class="outer1">
-                                <div class="outer2">
-                                    <div class="outer3">
-                                        <img src="images\John.jpg" >
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="name-and-location">
-                                <p>Kano Exchange</p>
-                                <p>Oyo Ibadan, N</p>
-                                <div class="online-presence">
-                                    <span class="availability" id="availability"></span>
-                                    <span class="presence" id="presence">online</span>
-                                </div>
-                                <a href='#' class="messageBtn">
-                                    Message
-                                </a>
-                                <div class="showMore">
-                                    <a href="#" id="showMoreBtn">Show more</a>
-                                </div>
-                            </div>
-                            </div>
+                <img src="images/Frame 1194 (1).png" alt="">
+                <p class="trdname">Babayaro Exchange<br> Ajibode Mokola</p>
+                <a href="#" class="msgTrdBtn">Message</a>
             </div>
-            
-            <div class="lowerEndImage">
-                <img src="images\Group 1139.png" alt="sabo">
+    </div>
+    <div class="top-rated-traders-imgAndMsgBtn">
+            <div class="Tr-Trader-Img-Container1"  id="ActiveTraders">
+                <img src="images/Frame 1194 (1).png" alt="">
+                <p class="trdname">Babayaro Exchange<br> Ajibode Mokola</p>
+                <a href="#" class="msgTrdBtn">Message</a>
             </div>
-     </div>
-   </div>
-
+            <div class="Tr-Trader-Img-Container1">
+                <img src="images/Frame 1194.png" alt="">
+                <p class="trdname">Babayaro Exchange<br> Ajibode Mokola</p>
+                <a href="#" class="msgTrdBtn">Message</a>
+            </div>
+            <div class="Tr-Trader-Img-Container1">
+                <img src="images/Frame 1194 (1).png" alt="">
+                <p class="trdname">Babayaro Exchange<br> Ajibode Mokola</p>
+                <a href="#" class="msgTrdBtn">Message</a>
+            </div>
+    </div> 
+    <!--show more---->
+    <div class="showmoretraders">
+        <a href="#" class="showmore">Show more &#8594;</a>
+    </div>
+    <!---WHAT is happening today div-->
+    <div class="wiht">
+        <h3>What is happening today?</h3>
+        <div class="tandg">
+            <div class="text">
+                <div class="nairabeatdollar">
+                    <p class="txt">Naira to beat Dollar in a month</p>
+                    <div class="dri">
+                        <img src="images/Vector 25.png" alt="" class="ri">
+                        <img src="images/Frame 1201.png" alt="" class="ai">
+                    </div>
+                </div>
+                <div class="nairabeatdollar">
+                    <p class="txt">Naira to beat Dollar in a month</p>
+                    <div class="dri">
+                        <img src="images/Vector 25.png" alt="" class="ri">
+                        <img src="images/Frame 1201.png" alt="" class="ai">
+                    </div>
+                </div>
+                <div class="nairabeatdollar">
+                    <p class="txt">Naira to beat Dollar in a month</p>
+                    <div class="dri">
+                        <img src="images/Vector 25.png" alt="" class="ri">
+                        <img src="images/Frame 1201.png" alt="" class="ai">
+                    </div>
+                </div>
+                <div class="nairabeatdollar">
+                    <p class="txt">Naira to beat Dollar in a month</p>
+                    <div class="dri">
+                        <img src="images/Vector 25.png" alt="" class="ri">
+                        <img src="images/Frame 1201.png" alt="" class="ai">
+                    </div>
+                </div>
+                <div class="nairabeatdollar">
+                    <p class="txt">Naira to beat Dollar in a month</p>
+                    <div class="dri">
+                        <img src="images/Vector 25.png" alt="" class="ri">
+                        <img src="images/Frame 1201.png" alt="" class="ai">
+                    </div>
+                </div>
+            </div>
+            <img src="images/Playful african man joking with beautiful european man while the holding money.png" alt="">
+        </div>
+    </div>
+    </div>
+   
    <!--This is the div containing the 'About Us' Container-->
-
    <div class="about-us">
     <div class="about">
         <div class="aboutUs-text">
@@ -536,8 +356,8 @@
             </p>
 
             <p>
-            We also want to create access for everyonone
-            in the Bureau De Change businness.  
+            We also want to create access for everyone
+            in the Bureau De Change business.  
             </p>
 
             <p>
@@ -631,19 +451,96 @@
         </div>
     </div>
    </div>
-
-
-
-
-
-
-
-
-
  </div>
 </div> 
-    
 
+<div class="mobileContainer">
+    <div class="navbarM">
+        <div class="navbarlink1">
+            <img src="images/SaboLogo.png" alt="sabo logo">
+            <img src="images/Rectangle 562.png" alt="">
+            <a href="#" class="navlinkM">About</a>
+            <img src="images/Rectangle 562.png" alt="">
+            <a href="#" class="navlinkM">Service</a>
+            <img src="images/Rectangle 562.png" alt="">
+            <a href="#" class="navlinkM">Language</a>
+            <img src="images/Rectangle 562.png" alt="">
+            <a href="#" class="navlinkM">Blog</a>
+        </div>
+        <div class="navbarlink2">
+            <a href="#" class="signinM">Sign in</a>
+            <a href="" class="signupM">Get Started</a>
+        </div>
+    </div>
+</div>
+<!--<div class="currencydisplay">
+    <div class="dollardis">
+        <img src="images/Ellipse 148.png" alt="" class="dollarD">
+        <img src="images/$.png" alt="" class="dollarDi">
+    </div>
+    <div class="naiardis">
+        <img src="images/Ellipse 149.png" alt="" class="nairaD">
+        <img src="images/#.png" alt="" class="nairaDi">
+    </div>
+    <div class="yuandis">
+        <img src="images/Ellipse 150.png" alt="" class="yuanD">
+        <img src="images/Y.png" alt="" class="yuanDi">
+    </div>
+</div>---->
+    
+<script>
+    // Conversion rate (1 USD = 1600 NGN,we can adjust this rate as needed)
+    const exchangeRate = 1600;
+  
+    //input fields
+    const usdInput = document.getElementById('usd');
+    const ngnInput = document.getElementById('ngn');
+  
+    // Function to update the currency conversion from USD to NGN
+    function convertUSDToNGN() {
+      const usdAmount = parseFloat(usdInput.value);
+      if (!isNaN(usdAmount)) {
+        ngnInput.value = (usdAmount * exchangeRate).toFixed(2);
+      } else {
+        ngnInput.value = '';
+      }
+    }
+  
+    // Function to update the currency conversion from NGN to USD
+    function convertNGNToUSD() {
+      const ngnAmount = parseFloat(ngnInput.value);
+      if (!isNaN(ngnAmount)) {
+        usdInput.value = (ngnAmount / exchangeRate).toFixed(2);
+      } else {
+        usdInput.value = '';
+      }
+    }
+  
+    // Event listeners to trigger the conversion while typing
+    usdInput.addEventListener('input', convertUSDToNGN);
+    ngnInput.addEventListener('input', convertNGNToUSD);
+
+    function rotate() {
+        if (document.getElementById('calc').style.flexDirection ='column'){
+       document.getElementById('calc').style.flexDirection ='column-reverse';
+       document.getElementById('swapButton').style.display ='none';
+       document.getElementById('swapButton2').style.display ='block';
+        } else {
+            document.getElementById('calc').style.flexDirection ='column';
+        }
+    }
+
+    function rotate2() {
+        if (document.getElementById('calc').style.flexDirection ='column-reverse'){
+       document.getElementById('calc').style.flexDirection ='column';
+       document.getElementById('swapButton2').style.display ='none';
+       document.getElementById('swapButton').style.display ='block';
+        } else {
+            document.getElementById('calc').style.flexDirection ='column';
+        }
+    }
+
+  </script>
 
 </body>
 </html>
