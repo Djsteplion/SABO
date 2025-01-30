@@ -18,7 +18,7 @@
 }
 
 .mobileContainer{
-    display: none;
+    display:none ;
 }
 
 
@@ -292,11 +292,11 @@
 
 
 .connectsNow{
-    color: white;
+    color: var(--txt-color-primary);
     font-weight: 700;
     font-size: 24px;
     line-height: 29.26px;
-    background-color: var(--txt-color-primary);
+    background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -313,9 +313,9 @@
 
 .connectsNow:hover{
     cursor: pointer!important;
-    background: transparent;
-    color: var(--txt-color-primary);
-    font-weight: 600;
+    background: var(--txt-color-primary);
+    color: white;
+    font-weight: 700;
 }
 
 .networkImg{
@@ -516,11 +516,14 @@
     display: flex;
     border-radius: 5px;
     background-color: white;
-    transition: 2s;
+    transition: 400ms;
 }
 
 .msgTrdBtn:hover{
-    transform: rotateY(180deg);
+    color: white;
+    background-color: #08297C;
+    font-weight: 600;
+    font-size: 24px;
 }
 
 .showmoretraders{
@@ -548,7 +551,10 @@
 }
 
 .showmore:hover{
-    transform: rotateY(180deg);
+    color: white;
+    background-color: #08297C;
+    font-weight: 600;
+    font-size: 24px;
 }
 
 .wiht{

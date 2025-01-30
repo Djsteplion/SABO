@@ -1,168 +1,400 @@
-@media screen and (max-width:800px){
+@media screen and (max-width:1000px){
 
     :root{
         --body-pl: 5px;
         --txt-color-primary: rgba(8,41,124,1);
+        --txt-primary-fontsize: 11px;
     }
 
     .container{
         display: none;
     }
 
-    .navbar{
-        padding-left: var(--body-pl) ; /* uniform padding-left */
-        border-bottom: 0.05px solid var(--txt-color-primary);
-        padding-bottom: 10px;
-        padding-top: 5px;
-        background-color: white;
-        position: static;
-        padding-right:0px;
-        width:inherit;
-        opacity: 1;
+
+    .mobileContainer{
+        display: block;
     }
 
-    #Sabo-Logo{
-        width: 70px;
-        height: 70px;
-        padding-top: 10.2px;
-      
-    }
-    
-    #sabo-logo2{
-        display: none;
-    }
-
-    .navButton{
-        padding-left: 7px;
+    .navbarM{
         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    .navBtnSigns{
-    display: flex;
-    justify-content: center;
-    align-items: center;
- 
+    .navbarlinkM1{
+        display: flex;
+        align-items: center;
     }
 
-    .signIn{
-        font-size: 16px;
-        font-weight: 700;
+    .navbarlinkM2{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 5px;
+        flex-direction: row;
+    }
+
+    .navbarlinkM1 a{
+        text-decoration-line: none;
         color: var(--txt-color-primary);
-        margin-top: 16px;
-        transition: 300ms;
-        margin-left: 4px;
+        padding-left: 4px;
+        font-size: 10px;
     }
 
-    .signUp{
-        margin-left: 0px;
-        margin-top: 26px;
-        color: white;
-        width: 109.5px;
-        height: 37px;
+    .navbarlinkM1 img{
+        padding-left: 4px;
+    }
+
+    .navbarlinkM1 a:hover{
+        cursor: pointer;
+        transition: 400ms;
+        color: black;
+    }
+
+    .navbarlinkM2 a{
+        text-decoration-line: none;
+        color: var(--txt-color-primary);
+    }
+
+    .signinM:hover{
+        color: black;
+        transition: 400ms;
+    }
+
+    .signinM{
+        font-size: 11px;
+    }
+
+    .signupM{
+        color: white!important;
         background-color: var(--txt-color-primary);
+        padding: 5px;
+        margin-left: 1.5px;
+        border-radius: 3px;
+        border: 0.5px solid var(--txt-color-primary) ;
+        font-size: 11px;
+    }
+
+    .signupM:hover{
+        color: var(--txt-color-primary)!important;
+        background-color: white!important;
+        cursor: pointer;
+        transition: 500ms;
+    }
+
+    .connectM{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ht{
+        color: var(--txt-color-primary);
+        font-weight: 500;
+        font-size: var(--txt-color-primary);
+    }
+
+    .exM{
         text-align: center;
-        font-weight: 700;
-        line-height: 29.26px;
-        font-family: 'Montserrat',sans-serif;
-        border-radius: 5px;
-        border:0.001px solid var(--txt-color-primary);
-        padding: 10px 15px 5px 15px;
-        transition: 300ms;
+        margin-top: -13px;
+    }
+
+    .exM h2{
+        color: var(--txt-color-primary);
+        font-weight: 600;
+    }
+
+    .exM p{
+       color: var(--txt-color-primary); 
+       font-size: 15px;
+       margin-top: -13px;
+       font-weight: 600;
+    }
+
+    .hImg{
+        text-align: center;
+    }
+
+    .CM{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cM{
+        text-decoration-line: none;
+        color: var(--txt-color-primary);
+        background-color: transparent;
+        border: 0.5px solid var(--txt-color-primary);
+        border-radius: 2px;
+        padding: 8px;
+        font-size: 11px;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: fit-content;
+    }
+
+    .cM:hover{
+        cursor: pointer;
+        transition: 500ms;
+        color: white;
+        background-color: var(--txt-color-primary);
+    }
+
+    .heroM{
+        background-color: linear-gradient(white,rgba(8,41,124,0.3));
+        margin-left: 0px!important;
+        margin-right: 0px!important;
+        margin-top: -7px;
+        padding-top: 25px;
+        animation-name: heroAnima;
+        animation-duration: 0.7s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
     }
 
     
-/* (2) Hero Section Container Styles */
+    @keyframes heroAnima {
+        0% {
+            background-image: linear-gradient(white,rgba(8,41,124,0.2));
+        }
 
-.hero{
-    display: flex;
-    flex-direction: column;
-    background-color: linear-gradient(to right,white,rgba(8,41,124,1));
-}
+        25% {
+            background-image: linear-gradient(white,rgba(8,41,124,0.3));
+        }
 
-.hero1-compartment{
-    padding-top: 2px;
-    width: 100%; 
-   text-align: center;
-}  
+        50% {
+            background-image: linear-gradient(white,rgba(8,41,124,0.4));
+        }
 
-.calculatorExterior{
-    margin-left: var(--body-pl);
-    border: none;
-    padding: 10px;
-    margin-right: 70px;
-    display: flex;
-    flex-direction: column;
-}
+        75% {
+            background-image: linear-gradient(white,rgba(8,41,124,0.5));
+        }
 
-
-.hero2-compartment{
-    width: 100%!important;
-    padding-top: 20px;
-    text-align: center;
-    background-image: none;
-    background-size: contain;
-    margin-right: 0px;
-    padding-right: 0px;
-    padding-left: 10px;
-    padding-bottom: 50px;
-    z-index: 0;
- }
- 
- .remove{
-    display: none;
-}
-
-.networkImg{
-    display: none;
-}
-
-#networkImg{
-    display: none;
-}
-
-.ctb{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-    width: 100%;
-}
-
-.ctb-text{
-    color: var(--txt-color-primary);
-    font-weight: 700;
-    font-size: 20px;
-    padding-top:0px;
-}
-    
-.exchange{
-    padding-left: var(--body-pl);
-    margin-top: 0px;
-    text-align: center;
-}
-
-/* First Service Container Styles */
-
-.services{
-    display: flex;
-    flex-direction: column;
-    border: 1px solid rgba(8,41,124,1);
-    z-index: 5;
-    margin-top: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
-    justify-content: space-between;
-    line-height: 22px;
-    z-index: 100;
-    background-color: white;
-    opacity: 56;
-}
+        100% {
+            background-image: linear-gradient(white,rgba(8,41,124,0.6));
+        }
+    }
 
 
+    .exs3{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
+    .exs3 h3{
+        font-size: 12px;
+    }
 
+    .exs3 p{
+        font-size: 10px;
+    }
+
+    .Ex1, .Ex2, .Ex3{
+        width: 30%;
+    }
+
+    .wavyline{
+        text-align: center;
+        width:fit-content;
+        overflow-y: hidden!important;
+        overflow-x: hidden!important;
+    }
+
+    .wavyline img{
+        width: 99%;
+    }
+
+    .wwdimg{
+        text-align: center;
+        margin-top: -45px;
+    }
+
+    .Ess{
+        background-color: white;
+        margin: 17px 7px 0px 7px;
+        padding: 8px;
+    }
+
+     .clt{
+        background-color: white;
+        border: 0.5px solid var(--txt-color-primary);
+        margin: 10px 7px;
+        padding-bottom: 20px;
+     }
+
+    .cltImgAndText{
+        text-align: center;
+    }
+
+    .cae{
+        text-align: center;
+        background-color: white;
+        border: 0.5px solid var(--txt-color-primary);
+        margin: 10px 7px;
+        padding-bottom: 30px;
+        padding-top: 5px;
+    }
+
+    .eru{
+        text-align: center;
+        background-color: white;
+        border: 0.5px solid var(--txt-color-primary);
+        margin: 10px 7px;
+        padding-bottom: 20px;
+        padding-top: 5px;
+        border-bottom-color: white;
+    }
+
+    .worldmap{
+        text-align: center;
+    }
+
+    .trt{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+        border-top: 0.5px solid var(--txt-color-primary);
+        border-bottom: 0.5px solid var(--txt-color-primary);
+    }
+
+    .tr{
+        border-right: 0.5px solid var(--txt-color-primary);
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        color: var(--txt-color-primary);
+    }
+
+    .trp{
+        padding-left: 10px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    .traderImgAndName{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .trader1{
+        margin: 20px 0px;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .trader1 img{
+        width: 99%;
+    }
+
+    .msgbtn{
+        text-decoration-line: none;
+        padding: 8px 40px;
+        border: 0.5px solid var(--txt-color-primary);
+        background-color: var(--txt-color-primary);
+        color: white;
+        font-size: 12px;
+        border-radius: 4px;
+    }
+
+    .msgbtn:hover{
+        color: var(--txt-color-primary);
+        background-color: transparent;
+        transition: 400ms;
+        cursor: pointer;
+    }
+
+    .seeall{
+        text-align: left;
+        padding: 4px 0px 19px 10px;
+        border-bottom: 4px solid var(--txt-color-primary);
+    }
+
+    .seeAll{
+        text-decoration-line: none;
+        color: var(--txt-color-primary);
+        font-size: 11px;
+        font-weight: 500;
+    }
+
+    .Aimg{
+        text-align: center;
+    }
+
+    .Atitle{
+        text-align: center;
+    }
+
+    .Atext{
+        padding: 0px 5px 5px 5px;
+        margin-top: -5px;
+    }
+
+    .Gtitle{
+        text-align: center;
+        color: var(--txt-color-primary);
+        margin-top: 20px;
+    }
+
+    .Gimg{
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .Gtxt1{
+        text-align: center;
+        padding: 10px 5px;
+    }
+
+    .Gimg2{
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .Gtxt2{
+        text-align: center;
+        padding: 10px 5px;
+    }
+
+    .wimg{
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .wimg img{
+        width: 90%;
+    }
+
+    .FooterM{
+        display: flex;
+        background-image: url('/images/Group 1131.png');
+        justify-content: space-around;
+        background-repeat: no-repeat!important;
+        background-size: cover;
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+
+    .fl{
+        text-decoration-line: none;
+        color: white;
+        padding-top: 5px;
+    }
+
+    .f1{
+        display: flex;
+        flex-direction: column;
+    }
 
 
 
