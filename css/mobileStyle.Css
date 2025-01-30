@@ -364,6 +364,7 @@
     .Gtxt1{
         text-align: center;
         padding: 10px 5px;
+        font-size: 12px;
     }
 
     .Gimg2{
@@ -374,6 +375,7 @@
     .Gtxt2{
         text-align: center;
         padding: 10px 5px;
+        font-size: 12px;
     }
 
     .wimg{
@@ -391,8 +393,8 @@
         justify-content: space-around;
         background-repeat: no-repeat!important;
         background-size: cover;
-        padding-top: 80px;
-        padding-bottom: 40px;
+        padding-top: 120px;
+        padding-bottom: 50px;
     }
 
     .fl{
