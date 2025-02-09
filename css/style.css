@@ -4,13 +4,19 @@
     --txt-color-primary: rgba(8,41,124,1);
 }
 
-
+body, html{
+    overflow-x: hidden!important;
+    margin: 0;
+    padding: 0;
+}
 
 
 
 /* Body Style */
 
 .container{
+    position: relative;
+    
     width: 100%;
     border: 1px solid var(--txt-color-primary);
     font-family: 'Montserrat', sans-serif;
@@ -702,4 +708,245 @@
 .footer-content a:hover{
     text-decoration-line: underline;
     text-decoration-color:white ;
+}
+
+
+/* SIGN UP STYLE */
+
+.signUpCont{
+    position: absolute;
+    z-index: 1;
+    background-color:white ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 50px;
+    font-family: 'monteserrat';
+    margin-left: 25%;
+    margin-right: 25%;
+    top: 170px;
+}
+
+#signUpCont1{
+    display: none;
+}
+
+.signInCont{
+    position: absolute;
+    z-index: 1;
+    background-color:white ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 50px;
+    font-family: 'monteserrat';
+    margin-left: 25%;
+    margin-right: 25%;
+    top:170px;
+}
+
+#signInCont1{
+    display: none;
+}
+
+.languages{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: fit-content;
+}
+
+.L{
+    margin-right: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 19.5px;
+    border: 1px solid white;
+    padding: 7px 10px;
+    border-radius: 5px;
+}
+
+.L:hover{
+    border: 1px solid #000000;
+    transition: 400ms;
+    cursor: pointer;
+}
+
+.emailOrPhone, .phonenumber{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    justify-content: center;
+}
+
+.ep{
+    width: 382px;
+    height: 55px;
+    font-size: 16px;
+    border-radius: 8px;
+    border-color: #08297C;
+    box-shadow: 0px 1px rgba(0,0,0.2);
+}
+
+.emailOrPhone input, .password input, .cpassword input, .phonenumber input{
+    margin-top: -10px;
+}
+
+.FirstName, .LastName{
+    margin-top: 30px;
+}
+
+.agreebox{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+}
+
+.terms{
+    color: #08297C;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.38px;
+}
+
+.signupFinalButton{
+    width: 379px;
+    height: 51px;
+    border-radius: 8px;
+    border: 0.1px solid #08297C;
+    background-color: #08297C;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.26px;
+    text-decoration-line: none;
+    margin-top: 20px;
+}
+
+.signupFinalButton:hover{
+    color:#08297C;
+    background: transparent;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.signInFinalButton{
+    width: 379px;
+    height: 51px;
+    border-radius: 8px;
+    border: 0.1px solid #08297C;
+    background-color: #08297C;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.26px;
+    text-decoration-line: none;
+    margin-top: 60px;
+}
+
+.signInFinalButton:hover{
+    color:#08297C;
+    background: transparent;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.instruct{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.38px;
+}
+
+.orWith{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 379px;
+    height: 20px;
+    margin-top: 15px;
+}
+
+.demarcation1{
+    color: white;
+    text-decoration: line-through;
+    text-decoration-color: #08297C;
+    margin-right: 15px;
+    width: 135.51px;
+}
+
+.demarcation2{
+    color: #000000;
+    font-size: 16px;
+    line-height: 19.5px;
+    font-weight: 500;
+}
+
+.demarcation3{
+    color: white;
+    text-decoration: line-through;
+    text-decoration-color: #08297C;
+    margin-left: 10px;
+    width: 135.51px;
+}
+
+.googleOrFacebook{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 379.86px;
+    height: 45.01px;
+    margin-top: 20px;
+}
+
+.google{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #000000;
+    padding: 0px 20px;
+    width: 104px;
+    height: 45px;
+    border-radius: 5px;
+}
+
+.google:hover, .facebook:hover{
+    cursor: pointer;
+}
+
+.facebook{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 145px;
+    height: 45px;
+    background-color: rgba(8,41,124,0.72);
+    border-radius: 5px;
+}
+
+.flogo{
+    margin-left: 10px;
+}
+
+.alreadyHaveAnAccount{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 370px;
+}
+
+.log{
+    text-decoration-line: none;
+    color: #08297C;
+    margin-left: 5px;
 }
