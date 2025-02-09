@@ -202,7 +202,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 8px 4px;
+        padding: 8px 4px 12px 4px;
     }
 
     .navbarlinkM1{
@@ -274,27 +274,122 @@
     }
 
     .ht{
-        color: var(--txt-color-primary);
+        color: white;
         font-weight: 500;
         font-size: var(--txt-color-primary);
+        animation-name: textFade;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
     }
 
     .exM{
         text-align: center;
         margin-top: -13px;
+        animation-name: textFade;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
     }
 
     .exM h2{
-        color: var(--txt-color-primary);
+        color: white;
         font-weight: 600;
+        animation-name: textFade;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
     }
 
     .exM p{
-       color: var(--txt-color-primary); 
+       color: white; 
        font-size: 15px;
        margin-top: -13px;
        font-weight: 600;
+       animation-name: textFade;
+       animation-duration: 5s;
+       animation-iteration-count: infinite;
+       animation-direction: alternate;
+       animation-timing-function: linear;
     }
+
+    @keyframes textFade {
+        0% { color: rgba(255, 255, 255, 1); }
+        1% { color: rgba(255, 255, 255, 0.99); }
+        2% { color: rgba(253, 253, 253, 0.98); }
+        3% { color: rgba(251, 251, 251, 0.97); }
+        4% { color: rgba(249, 249, 249, 0.96); }
+        5% { color: rgba(247, 247, 247, 0.95); }
+        6% { color: rgba(245, 245, 245, 0.94); }
+        7% { color: rgba(243, 243, 243, 0.93); }
+        8% { color: rgba(241, 241, 241, 0.92); }
+        9% { color: rgba(239, 239, 239, 0.91); }
+        10% { color: rgba(237, 237, 237, 0.90); }
+        11% { color: rgba(235, 235, 235, 0.89); }
+        12% { color: rgba(233, 233, 233, 0.88); }
+        13% { color: rgba(231, 231, 231, 0.87); }
+        14% { color: rgba(229, 229, 229, 0.86); }
+        15% { color: rgba(227, 227, 227, 0.85); }
+        16% { color: rgba(225, 225, 225, 0.84); }
+        17% { color: rgba(223, 223, 223, 0.83); }
+        18% { color: rgba(221, 221, 221, 0.82); }
+        19% { color: rgba(219, 219, 219, 0.81); }
+        20% { color: rgba(217, 217, 217, 0.80); }
+        21% { color: rgba(215, 215, 220, 0.79); }
+        22% { color: rgba(213, 213, 225, 0.78); }
+        23% { color: rgba(211, 211, 230, 0.77); }
+        24% { color: rgba(209, 209, 235, 0.76); }
+        25% { color: rgba(207, 207, 240, 0.75); }
+        26% { color: rgba(205, 205, 245, 0.74); }
+        27% { color: rgba(203, 203, 250, 0.73); }
+        28% { color: rgba(190, 200, 248, 0.72); }
+        29% { color: rgba(180, 195, 246, 0.72); }
+        30% { color: rgba(170, 190, 244, 0.72); }
+        31% { color: rgba(160, 185, 242, 0.72); }
+        32% { color: rgba(150, 180, 240, 0.72); }
+        33% { color: rgba(140, 175, 238, 0.72); }
+        34% { color: rgba(130, 170, 236, 0.72); }
+        35% { color: rgba(120, 165, 234, 0.72); }
+        36% { color: rgba(110, 160, 232, 0.72); }
+        37% { color: rgba(100, 155, 230, 0.72); }
+        38% { color: rgba(90, 150, 228, 0.72); }
+        39% { color: rgba(80, 145, 226, 0.72); }
+        40% { color: rgba(70, 140, 224, 0.72); }
+        41% { color: rgba(65, 135, 220, 0.72); }
+        42% { color: rgba(60, 130, 216, 0.72); }
+        43% { color: rgba(55, 125, 212, 0.72); }
+        44% { color: rgba(50, 120, 208, 0.72); }
+        45% { color: rgba(45, 115, 204, 0.72); }
+        46% { color: rgba(40, 110, 200, 0.72); }
+        47% { color: rgba(38, 108, 196, 0.72); }
+        48% { color: rgba(36, 106, 192, 0.72); }
+        49% { color: rgba(34, 104, 188, 0.72); }
+        50% { color: rgba(32, 102, 184, 0.72); }
+        51% { color: rgba(30, 100, 180, 0.72); }
+        52% { color: rgba(28, 98, 176, 0.72); }
+        53% { color: rgba(26, 96, 172, 0.72); }
+        54% { color: rgba(24, 94, 168, 0.72); }
+        55% { color: rgba(22, 92, 164, 0.72); }
+        56% { color: rgba(20, 90, 160, 0.72); }
+        57% { color: rgba(18, 88, 156, 0.72); }
+        58% { color: rgba(16, 86, 152, 0.72); }
+        59% { color: rgba(14, 84, 148, 0.72); }
+        60% { color: rgba(12, 82, 144, 0.72); }
+        61% { color: rgba(10, 80, 140, 0.72); }
+        62% { color: rgba(9, 78, 136, 0.72); }
+        63% { color: rgba(8, 76, 132, 0.72); }
+        64% { color: rgba(8, 74, 128, 0.72); }
+        65% { color: rgba(8, 72, 124, 0.72); }
+        66% { color: rgba(8, 70, 124, 0.72); }
+        67% { color: rgba(8, 68, 124, 0.72); }
+        100% { color: rgba(8, 41, 124, 0.72); }
+      }
+      
+      
+      .text-element {
+        animation: textFade 5s linear forwards;
+      }
 
     .hImg{
         text-align: center;
@@ -420,6 +515,7 @@
       .element {
         animation: fadeOut 5s linear forwards;
       }
+      
       
 
 
@@ -587,6 +683,10 @@
     .Atext{
         padding: 0px 5px 5px 5px;
         margin-top: -5px;
+    }
+
+    .Atext p{
+        font-size: 11px;
     }
 
     .Gtitle{
