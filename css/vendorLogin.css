@@ -1,0 +1,626 @@
+:root{
+    --body-pl: 35px;
+    --txt-color-primary: rgba(8,41,124,1);
+}
+
+body,html{
+    margin:0px !important;
+}
+
+body{
+    animation-name: heroAnima;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid var(--txt-color-primary);
+    background-color: white;
+}
+
+.Sabo-Logo{
+    width: 8%;
+}
+
+.signOptions{
+    display: flex;
+    align-items: center;
+}
+
+.signIn{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--txt-color-primary);
+    margin-top: 26px;
+    transition: 300ms;
+}
+
+.signIn:hover{
+    cursor: pointer;
+    animation: ease-out;
+    color: black;
+}
+
+.signUp:hover{
+    cursor: pointer;
+    animation: ease-out;
+    color: var(--txt-color-primary);
+    background-color: transparent;
+}
+
+.signUp{
+    margin-left: 10px;
+    font-size: 18px;
+    color: white;
+    width: 109.5px;
+    height: 37px;
+    background-color: var(--txt-color-primary);
+    text-align: center;
+    font-weight: 700;
+    line-height: 29.26px;
+    font-family: 'Montserrat',sans-serif;
+    border-radius: 5px;
+    border:0.001px solid var(--txt-color-primary);
+    padding: 10px 15px 5px 15px;
+    transition: 300ms;
+}
+
+
+@keyframes heroAnima {
+    0% { background-color: rgba(8, 41, 124, 1); }
+    1% { background-color: rgba(8, 41, 124, 0.99); }
+    2% { background-color: rgba(8, 41, 124, 0.98); }
+    3% { background-color: rgba(8, 41, 124, 0.97); }
+    4% { background-color: rgba(8, 41, 124, 0.96); }
+    5% { background-color: rgba(8, 41, 124, 0.95); }
+    6% { background-color: rgba(8, 41, 124, 0.94); }
+    7% { background-color: rgba(8, 41, 124, 0.93); }
+    8% { background-color: rgba(8, 41, 124, 0.92); }
+    9% { background-color: rgba(8, 41, 124, 0.91); }
+    10% { background-color: rgba(8, 41, 124, 0.90); }
+    11% { background-color: rgba(8, 41, 124, 0.89); }
+    12% { background-color: rgba(8, 41, 124, 0.88); }
+    13% { background-color: rgba(8, 41, 124, 0.87); }
+    14% { background-color: rgba(8, 41, 124, 0.86); }
+    15% { background-color: rgba(8, 41, 124, 0.85); }
+    16% { background-color: rgba(8, 41, 124, 0.84); }
+    17% { background-color: rgba(8, 41, 124, 0.83); }
+    18% { background-color: rgba(8, 41, 124, 0.82); }
+    19% { background-color: rgba(8, 41, 124, 0.81); }
+    20% { background-color: rgba(8, 41, 124, 0.80); }
+    21% { background-color: rgba(8, 41, 124, 0.79); }
+    22% { background-color: rgba(8, 41, 124, 0.78); }
+    23% { background-color: rgba(8, 41, 124, 0.77); }
+    24% { background-color: rgba(8, 41, 124, 0.76); }
+    25% { background-color: rgba(8, 41, 124, 0.75); }
+    26% { background-color: rgba(8, 41, 124, 0.74); }
+    27% { background-color: rgba(8, 41, 124, 0.73); }
+    28% { background-color: rgba(8, 41, 124, 0.72); }
+    29% { background-color: rgba(8, 41, 124, 0.71); }
+    30% { background-color: rgba(8, 41, 124, 0.70); }
+    31% { background-color: rgba(8, 41, 124, 0.69); }
+    32% { background-color: rgba(8, 41, 124, 0.68); }
+    33% { background-color: rgba(8, 41, 124, 0.67); }
+    34% { background-color: rgba(8, 41, 124, 0.66); }
+    35% { background-color: rgba(8, 41, 124, 0.65); }
+    36% { background-color: rgba(8, 41, 124, 0.64); }
+    37% { background-color: rgba(8, 41, 124, 0.63); }
+    38% { background-color: rgba(8, 41, 124, 0.62); }
+    39% { background-color: rgba(8, 41, 124, 0.61); }
+    40% { background-color: rgba(8, 41, 124, 0.60); }
+    41% { background-color: rgba(8, 41, 124, 0.59); }
+    42% { background-color: rgba(8, 41, 124, 0.58); }
+    43% { background-color: rgba(8, 41, 124, 0.57); }
+    44% { background-color: rgba(8, 41, 124, 0.56); }
+    45% { background-color: rgba(8, 41, 124, 0.55); }
+    46% { background-color: rgba(8, 41, 124, 0.54); }
+    47% { background-color: rgba(8, 41, 124, 0.53); }
+    48% { background-color: rgba(8, 41, 124, 0.52); }
+    49% { background-color: rgba(8, 41, 124, 0.51); }
+    50% { background-color: rgba(8, 41, 124, 0.50); }
+    51% { background-color: rgba(8, 41, 124, 0.49); }
+    52% { background-color: rgba(8, 41, 124, 0.48); }
+    53% { background-color: rgba(8, 41, 124, 0.47); }
+    54% { background-color: rgba(8, 41, 124, 0.46); }
+    55% { background-color: rgba(8, 41, 124, 0.45); }
+    56% { background-color: rgba(8, 41, 124, 0.44); }
+    57% { background-color: rgba(8, 41, 124, 0.43); }
+    58% { background-color: rgba(8, 41, 124, 0.42); }
+    59% { background-color: rgba(8, 41, 124, 0.41); }
+    60% { background-color: rgba(8, 41, 124, 0.40); }
+    61% { background-color: rgba(8, 41, 124, 0.39); }
+    62% { background-color: rgba(8, 41, 124, 0.38); }
+    63% { background-color: rgba(8, 41, 124, 0.37); }
+    64% { background-color: rgba(8, 41, 124, 0.36); }
+    65% { background-color: rgba(8, 41, 124, 0.35); }
+    66% { background-color: rgba(8, 41, 124, 0.34); }
+    67% { background-color: rgba(8, 41, 124, 0.33); }
+    68% { background-color: rgba(8, 41, 124, 0.32); }
+    69% { background-color: rgba(8, 41, 124, 0.31); }
+    70% { background-color: rgba(8, 41, 124, 0.30); }
+    100% { background-color: rgba(8, 41, 124, 0); }
+  }
+  
+
+/** sign in  ***/
+
+/* SIGN UP STYLE */
+
+.signUpCont{
+    position: absolute;
+    z-index: 1;
+    background-color:white ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 50px;
+    font-family: 'monteserrat';
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top:50px;
+    margin-bottom:100px;
+}
+
+.signInCont{
+    position: absolute;
+    z-index: 1;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 50px;
+    font-family: 'monteserrat';
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 50px;
+    margin-bottom:100px;
+}
+
+#signInCont1{
+    display: ;
+}
+
+.languages{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: fit-content;
+}
+
+.L{
+    margin-right: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 19.5px;
+    border: 1px solid white;
+    padding: 7px 10px;
+    border-radius: 5px;
+}
+
+.L:hover{
+    border: 1px solid #000000;
+    transition: 400ms;
+    cursor: pointer;
+}
+
+.emailOrPhone, .phonenumber{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    justify-content: center;
+}
+
+.ep{
+    width: 382px;
+    height: 55px;
+    font-size: 16px;
+    border-radius: 8px;
+    border-color: #08297C;
+    box-shadow: 0px 1px rgba(0,0,0.2);
+}
+
+.epm{
+    width: 382px;
+    height: 27.5px;
+    font-size: 16px;
+    border-color: #08297C;
+    box-shadow: 0px 1px rgba(0,0,0.2);
+}
+
+.emailOrPhone input, .password input, .cpassword input, .phonenumber input{
+    margin-top: -10px;
+}
+
+.FirstName, .LastName{
+    margin-top: 30px;
+}
+
+.agreebox{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+}
+
+.terms{
+    color: #08297C;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.38px;
+}
+
+.signupFinalButton{
+    width: 379px;
+    height: 51px;
+    border-radius: 8px;
+    border: 0.1px solid #08297C;
+    background-color: #08297C;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.26px;
+    text-decoration-line: none;
+    margin-top: 20px;
+}
+
+.signupFinalButton:hover{
+    color:#08297C;
+    background: transparent;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.signInFinalButton{
+    width: 379px;
+    height: 51px;
+    border-radius: 8px;
+    border: 0.1px solid #08297C;
+    background-color: #08297C;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.26px;
+    text-decoration-line: none;
+    margin-top: 60px;
+}
+
+.signInFinalButton:hover{
+    color:#08297C;
+    background: transparent;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.instruct{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.38px;
+}
+
+.orWith{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 379px;
+    height: 20px;
+    margin-top: 15px;
+}
+
+.demarcation1{
+    color: white;
+    text-decoration: line-through;
+    text-decoration-color: #08297C;
+    margin-right: 15px;
+    width: 135.51px;
+}
+
+.demarcation2{
+    color: #000000;
+    font-size: 16px;
+    line-height: 19.5px;
+    font-weight: 500;
+}
+
+.demarcation3{
+    color: white;
+    text-decoration: line-through;
+    text-decoration-color: #08297C;
+    margin-left: 10px;
+    width: 135.51px;
+}
+
+.googleOrFacebook{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 379.86px;
+    height: 45.01px;
+    margin-top: 20px;
+}
+
+.google{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #000000;
+    padding: 0px 20px;
+    width: 104px;
+    height: 45px;
+    border-radius: 5px;
+}
+
+.google:hover, .facebook:hover{
+    cursor: pointer;
+}
+
+.facebook{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 145px;
+    height: 45px;
+    background-color: rgba(8,41,124,0.72);
+    border-radius: 5px;
+}
+
+.flogo{
+    margin-left: 10px;
+}
+
+.alreadyHaveAnAccount{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 370px;
+}
+
+.log{
+    text-decoration-line: none;
+    color: #08297C;
+    margin-left: 5px;
+}
+
+
+
+@media screen and (max-width:1080px){
+
+    body,html{
+        margin:0px !important;
+    }
+
+    .navbar{
+        padding: 5px;
+        margin: 0px!important;
+    }
+
+.signOptions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}    
+
+.signIn{
+    font-size: 13px;
+    margin-top: 13px;
+}
+
+.signUp{
+    margin-left: 10px;
+    font-size: 13px;
+    color: white;
+    width: 55px;
+    height: 19px;
+    background-color: var(--txt-color-primary);
+    text-align: center;
+    font-weight: 700;
+    line-height: 29.26px;
+    font-family: 'Montserrat',sans-serif;
+    border-radius: 5px;
+    border:0.001px solid var(--txt-color-primary);
+    padding: 5px 7.5px 5px 7.5px;
+    transition: 300ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+    .signUpCont{
+        position: absolute;
+        z-index: 1;
+        background-color:white ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px 15px;
+        font-family: 'monteserrat';
+        margin-left: 5%;
+        margin-right:5%;
+        margin-top: 30px;
+    }
+
+    .signInCont{
+        position: absolute;
+        z-index: 1;
+        background-color:white ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px 15px;
+        font-family: 'monteserrat';
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 30px;
+    }
+
+    #signUpCont1{
+        display: none;
+    }
+
+    .L{
+        margin-right: 7px;
+        font-size: 12px;
+        font-weight: 400;
+        color: #000000;
+        line-height: 19.5px;
+        border: 1px solid white;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    .ep{
+        width: 280px;
+        height: 35px;
+        font-size: 12px;
+        border-radius: 8px;
+        border-color: #08297C;
+        box-shadow: 0px 1px rgba(0,0,0.2);
+    }
+
+    .epm{
+        width: 280px;
+        height: 27px;
+        font-size: 11px;
+        border-radius: 8px;
+        border-color: #08297C;
+        box-shadow: 0px 1px rgba(0,0,0.2);
+    }
+
+    .FirstName, .LastName{
+        margin-top: 13px;
+    }
+
+    .emailOrPhone input, .password input, .cpassword input, .phonenumber input{
+        margin-top: -5px;
+    }
+
+    .instruct{
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 12px;
+    }
+
+    .terms{
+        color: #08297C;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 12px;
+    }
+
+    .signupFinalButton{
+        width: 280px;
+        height: 40px;
+        border-radius: 5px;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 13px;
+        margin-top: 10px;
+    }
+
+    .signInFinalButton{
+        width: 285px;
+        height: 40px;
+        border-radius: 5px;
+        border: 0.1px solid #08297C;
+        background-color: #08297C;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 13px;
+        text-decoration-line: none;
+        margin-top: 20px;
+    }
+
+    .orWith{
+        width: 280px;
+        margin-top: 12px;
+    }
+    
+.demarcation1{
+    display: none;
+}
+
+.demarcation2{
+    font-size: 11px;
+}
+
+.demarcation3{
+    display: none;
+}
+
+.googleOrFacebook{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 280px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+.google{
+    width: 100%;
+    border: 1px solid #000000;
+    padding: 0px 10px;
+    width: 55px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+.google:hover, .facebook:hover{
+    cursor: pointer;
+}
+
+.facebook{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 37px;
+    background-color: rgba(8,41,124,0.72);
+    border-radius: 5px;
+}
+
+.flogo{
+    margin-left: 0px;
+    display: none;
+}
+
+.googleText{
+    display: none;
+}
+
+.alreadyHaveAnAccount{
+    width: 280px;
+    margin-top: 6px;
+}
+
+.already{
+    font-size: 10px;
+}
+
+.log{
+    font-size: 10px;
+}
+
+}

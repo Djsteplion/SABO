@@ -1,0 +1,324 @@
+
+:root{
+    --body-pl: 35px;
+    --txt-color-primary: rgba(8,41,124,1);
+}
+
+body, html{
+    overflow-x: hidden!important;
+    margin: 0;
+    padding: 0;
+}
+
+.mobileDiv{
+    display: none;
+}
+
+.Navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.logoAndNav{
+    display: flex;
+    align-items: center;
+}
+
+.Sabo-Logo{
+    width: 12%;
+}
+
+.navButtons{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-left: 30px;
+}
+
+.navButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navButton a{
+    text-decoration-line: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    color:var(--txt-color-primary);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29.26px;
+    font-family: 'Montserrat',sans-serif;
+    transition: 300ms;
+}
+
+.navButton a:hover{
+    color: black;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.navIcons{
+    display: flex;
+}
+
+.navIcons img{
+    margin-left:20px;
+    width: 15%;
+}
+
+.navIcons img:hover{
+    cursor: pointer;
+}
+
+/* Container containing the current exchange rate of naira to dollar **/
+
+.actH{
+    display: flex;
+    align-items: center;
+    border-right: 10px solid var(--txt-color-primary);
+    padding-right: 10px;
+    padding-left: 20px;
+}
+
+.actH span{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39.01px;
+    color: var(--txt-color-primary);
+    padding: 10px;
+}
+
+.nDollar{
+    display: flex;
+    border-top: 1px solid var(--txt-color-primary);
+    border-bottom: 1px solid var(--txt-color-primary);
+    align-items: center;
+}
+
+.cPrice span{
+    font-size: 24px;
+    color: red;
+    line-height:29.26px;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+/* container containing the  image and message btn of the vendors/traders **/
+
+.traderInfo{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    animation: gradientShift 5s infinite alternate ease-in-out;
+}
+
+@keyframes gradientShift {
+    0% { background: linear-gradient(to right, white, rgba(8,41,124,1)); }
+    1% { background: linear-gradient(to right, rgba(252, 252, 252, 1), rgba(10, 44, 126, 1)); }
+    2% { background: linear-gradient(to right, rgba(248, 248, 248, 1), rgba(12, 47, 128, 1)); }
+    3% { background: linear-gradient(to right, rgba(244, 244, 244, 1), rgba(14, 50, 130, 1)); }
+    4% { background: linear-gradient(to right, rgba(240, 240, 240, 1), rgba(16, 53, 132, 1)); }
+    5% { background: linear-gradient(to right, rgba(236, 236, 236, 1), rgba(18, 56, 134, 1)); }
+    6% { background: linear-gradient(to right, rgba(232, 232, 232, 1), rgba(20, 59, 136, 1)); }
+    7% { background: linear-gradient(to right, rgba(228, 228, 228, 1), rgba(22, 62, 138, 1)); }
+    8% { background: linear-gradient(to right, rgba(224, 224, 224, 1), rgba(24, 65, 140, 1)); }
+    9% { background: linear-gradient(to right, rgba(220, 220, 220, 1), rgba(26, 68, 142, 1)); }
+    10% { background: linear-gradient(to right, rgba(216, 216, 216, 1), rgba(28, 71, 144, 1)); }
+    11% { background: linear-gradient(to right, rgba(212, 212, 212, 1), rgba(30, 74, 146, 1)); }
+    12% { background: linear-gradient(to right, rgba(208, 208, 208, 1), rgba(32, 77, 148, 1)); }
+    13% { background: linear-gradient(to right, rgba(204, 204, 204, 1), rgba(34, 80, 150, 1)); }
+    14% { background: linear-gradient(to right, rgba(200, 200, 200, 1), rgba(36, 83, 152, 1)); }
+    15% { background: linear-gradient(to right, rgba(196, 196, 196, 1), rgba(38, 86, 154, 1)); }
+    16% { background: linear-gradient(to right, rgba(192, 192, 192, 1), rgba(40, 89, 156, 1)); }
+    17% { background: linear-gradient(to right, rgba(188, 188, 188, 1), rgba(42, 92, 158, 1)); }
+    18% { background: linear-gradient(to right, rgba(184, 184, 184, 1), rgba(44, 95, 160, 1)); }
+    19% { background: linear-gradient(to right, rgba(180, 180, 180, 1), rgba(46, 98, 162, 1)); }
+    20% { background: linear-gradient(to right, rgba(176, 176, 176, 1), rgba(48, 101, 164, 1)); }
+    21% { background: linear-gradient(to right, rgba(172, 172, 172, 1), rgba(50, 104, 166, 1)); }
+  22% { background: linear-gradient(to right, rgba(168, 168, 168, 1), rgba(52, 107, 168, 1)); }
+  23% { background: linear-gradient(to right, rgba(164, 164, 164, 1), rgba(54, 110, 170, 1)); }
+  24% { background: linear-gradient(to right, rgba(160, 160, 160, 1), rgba(56, 113, 172, 1)); }
+  25% { background: linear-gradient(to right, rgba(156, 156, 156, 1), rgba(58, 116, 174, 1)); }
+  26% { background: linear-gradient(to right, rgba(152, 152, 152, 1), rgba(60, 119, 176, 1)); }
+  27% { background: linear-gradient(to right, rgba(148, 148, 148, 1), rgba(62, 122, 178, 1)); }
+  28% { background: linear-gradient(to right, rgba(144, 144, 144, 1), rgba(64, 125, 180, 1)); }
+  29% { background: linear-gradient(to right, rgba(140, 140, 140, 1), rgba(66, 128, 182, 1)); }
+  30% { background: linear-gradient(to right, rgba(136, 136, 136, 1), rgba(132, 132, 132, 1)); }
+  31% { background: linear-gradient(to right, rgba(132, 132, 132, 1), rgba(136, 136, 136, 1)); }
+  32% { background: linear-gradient(to right, rgba(128, 128, 128, 1), rgba(140, 140, 140, 1)); }
+  33% { background: linear-gradient(to right, rgba(124, 124, 124, 1), rgba(144, 144, 144, 1)); }
+  34% { background: linear-gradient(to right, rgba(120, 120, 120, 1), rgba(148, 148, 148, 1)); }
+  35% { background: linear-gradient(to right, rgba(116, 116, 116, 1), rgba(152, 152, 152, 1)); }
+  36% { background: linear-gradient(to right, rgba(112, 112, 112, 1), rgba(156, 156, 156, 1)); }
+  37% { background: linear-gradient(to right, rgba(108, 108, 108, 1), rgba(160, 160, 160, 1)); }
+  38% { background: linear-gradient(to right, rgba(104, 104, 104, 1), rgba(164, 164, 164, 1)); }
+  39% { background: linear-gradient(to right, rgba(100, 100, 100, 1), rgba(168, 168, 168, 1)); }
+  40% { background: linear-gradient(to right, rgba(96, 96, 96, 1), rgba(172, 172, 172, 1)); }
+  41% { background: linear-gradient(to right, rgba(92, 92, 92, 1), rgba(176, 176, 176, 1)); }
+  42% { background: linear-gradient(to right, rgba(88, 88, 88, 1), rgba(180, 180, 180, 1)); }
+  43% { background: linear-gradient(to right, rgba(84, 84, 84, 1), rgba(184, 184, 184, 1)); }
+  44% { background: linear-gradient(to right, rgba(80, 80, 80, 1), rgba(188, 188, 188, 1)); }
+  45% { background: linear-gradient(to right, rgba(76, 76, 76, 1), rgba(192, 192, 192, 1)); }
+  46% { background: linear-gradient(to right, rgba(72, 72, 72, 1), rgba(196, 196, 196, 1)); }
+  47% { background: linear-gradient(to right, rgba(68, 68, 68, 1), rgba(200, 200, 200, 1)); }
+  48% { background: linear-gradient(to right, rgba(64, 64, 64, 1), rgba(204, 204, 204, 1)); }
+  49% { background: linear-gradient(to right, rgba(12, 50, 120, 1), rgba(244, 244, 244, 1)); }
+    50% { background: linear-gradient(to right, rgba(8,41,124,1), white); }
+    51% { background: linear-gradient(to right, rgba(10, 44, 126, 1), rgba(252, 252, 252, 1)); }
+    52% { background: linear-gradient(to right, rgba(12, 47, 128, 1), rgba(248, 248, 248, 1)); }
+    53% { background: linear-gradient(to right, rgba(14, 50, 130, 1), rgba(244, 244, 244, 1)); }
+    
+    100% { background: linear-gradient(to right, white, rgba(8,41,124,1)); }
+  }
+  
+  .animated-bg {
+    animation: gradientShift 10s infinite alternate ease-in-out;
+  }
+  
+
+.trader1{
+    width: 20%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.trdname{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    color: black;
+    margin-top: 5px;
+}
+
+.msgTrdBtn{
+    text-decoration-line: none;
+    color: #08297C;
+    width: 208px;
+    height: 45px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 29.26px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 5px;
+    background-color: white;
+    transition: 400ms;
+}
+
+.msgTrdBtn:hover{
+    color: white;
+    background-color: #08297C;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+@media screen and (max-width:1020px){
+    
+    .Sabo-Logo{
+        width: 10%;
+    }
+
+    .Navbar{
+        padding-left: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .navButtons{
+        margin-left: 5px;
+    }
+    
+    .navButton a{
+        padding-left: 3px;
+        padding-right: 4px;
+        font-size: 12px;
+        line-height: 14.50px;
+    }
+
+    .navButton img{
+        width: 2.5px;
+        height: 22px;
+    }
+
+    .navIcons{
+        margin-left: 20px;
+    }
+
+    .navIcons img{
+        margin-left:7px;
+    }
+
+    .actH{
+        display: flex;
+        align-items: center;
+        border-right: 10px solid var(--txt-color-primary);
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    
+    .actH span{
+        font-size: 14px;
+        line-height: 15px;
+        padding: px;
+    }
+
+    .cPrice{
+        display: flex;
+        flex-direction: row;
+        padding-left: 10px;
+    }
+
+    .cPrice span{
+        font-size: 12px;
+        line-height:14px;
+        margin-left: 0px;
+        padding: 2px;
+    }
+
+    #remove{
+        display: none;
+    }
+
+    .trader1{
+        width: 40%;
+        margin: 12px;
+    }
+
+    .msgTrdBtn{
+        width: 145.6px;
+        height: 31.5px;
+        font-size: 13px;
+    }
+
+    .msgTrdBtn:hover{
+        font-size: 17px;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
