@@ -436,6 +436,9 @@ body, html{
     border-radius: 10px;
     margin-left:12px;
     margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*** ChatMessages Div **/
@@ -446,7 +449,7 @@ body, html{
 
     .chatMessages{
      width:315px; 
-     height:410px;
+     height:450px;
     }
 
     
@@ -476,7 +479,7 @@ body, html{
     width:30px;
     height: 30px;
     padding-left:0px;
-    padding-right: 3px;
+    padding-right: 15px;
 }
 
 }
