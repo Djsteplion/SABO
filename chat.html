@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabo | Chats </title>
+    <link rel="stylesheet" href="css/chat.css">
+</head>
+<body>
+
+<!--This is the NavigationBar Container-->   
+<div class="Navbar">
+    <div class="logoAndNav">
+        <img src="images\saboo.png" alt="Sabo-Logo" class="Sabo-Logo">
+        <div class="navButtons">
+            <div class="navButton">
+                <img src="images\verticalBar.png" alt="verticalBar" id="verticalBar">
+                <a href="./index.html" class="">About</a>
+            </div>
+            <div class="navButton">
+                <img src="images\verticalBar.png" alt="verticalBar" id="verticalBar">
+                <a href="./index.html">Services</a>
+            </div>
+            <div class="navButton">
+                <img src="images\verticalBar.png" alt="verticalBar" id="verticalBar">
+                <a href="./index.html">Language</a>
+            </div>
+            <div class="navButton">
+                <img src="images\verticalBar.png" alt="verticalBar" id="verticalBar">
+                <a href="./index.html">Blog</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="navIcons">
+    <img src="images/Group 1051.png" alt="search icon">
+    <img src="images/Group 885.png" alt="notification icon">
+    <img src="images/Group 884.png" alt="message icon" onclick="redirectToChats()">
+    <img src="images/Ellipse 133.png" alt="user's avatar">
+    </div>
+</div>
+<div class="chatCont">
+    <div class="leftCont">
+        <div class="topCot">
+            <p>Chat box</p>
+            <img src="images/Group 827.png" alt="">
+        </div>
+        <div class="contact1">
+            <div class="contactImg">
+                <img src="images/Ellipse 149.png" alt="">
+                <p class="contactFirstLetter">F</p>
+            </div>
+            <div class="cName">
+            Fashola Tunji
+            </div>
+        </div>
+        <div class="contact2">
+            <div class="contactImg">
+                <img src="images/Ellipse 149.png" alt="">
+                <p class="contactFirstLetter">G</p>
+            </div>
+            <div class="cName">
+            God's Favour
+            </div>
+        </div>
+        <div class="contact2">
+            <div class="contactImg">
+                <img src="images/Ellipse 149.png" alt="">
+                <p class="contactFirstLetter">S</p>
+            </div>
+            <div class="cName">
+            Stephen Prayer
+            </div>
+        </div>
+    </div>
+    <div class="rightCont">
+        <div class="topBar">
+            <div class="searchplace">
+                <input type="text" name="" id="" class="searchName" placeholder="Fashola Tunji">
+                <img src="images/Group 1051.png" alt="">
+            </div>
+            <img src="images/flag-7.png" alt="" class="flagUser">
+            <img src="images/Group 1071.png" alt="" class="selectOpt">
+        </div>
+        <div class="chatMessages" id="chat" >
+            
+        </div>
+        <div class="bottomBar">
+            <div class="messagepack">
+                <input type="text" name="" id="message" placeholder="Type here"  class="typeMsg" onclick="showM()">
+                <div class="audio" onclick="showA()">
+                    <img src="images/animation.png" alt="" id="audioButton">
+                    <input type="file" name=""  class="Iaudio" id="audioFile"  accept="audio/*" onchange="changeButtonColor('audioButton')">
+                </div>
+                <div class="file" onclick="showF()">
+                    <img src="images/Union (1).svg" alt="" id='fileButton'>
+                    <input type="file" name="" class="Ifile" id="fileInput" onchange="changeButtonColor('fileButton')">
+                </div>
+            </div>
+            <img src="images/Union.svg" onclick="sendMessage()" id='m' alt="" class="chatMsgBtn">
+            <img src="images/Union.svg" onclick="sendAudio()" id='a' alt="" class="chatMsgBtn">
+            <img src="images/Union.svg" onclick="sendFile()" id="f" alt=""  class="chatMsgBtn">
+        </div>
+    </div>
+</div>
+
+<script>
+
+function redirectToChats(){
+        window.location.href = "./activeVendors.html";
+    }
+    
+        function showM(){
+            document.getElementById('m').style.display = 'block';
+            document.getElementById('a').style.display = 'none';
+            document.getElementById('f').style.display = 'none';
+            document.getElementById('audioButton').style.backgroundColor = 'transparent';
+            document.getElementById('fileButton').style.backgroundColor = 'transparent';
+        }
+
+        function showA(){
+            document.getElementById('a').style.display = 'block';
+            document.getElementById('a').classList.add("animated");
+            document.getElementById('f').classList.remove("animated");
+            document.getElementById('m').style.display = 'none';
+            document.getElementById('f').style.display = 'none';
+            document.getElementById('audioButton').style.backgroundColor = 'rgb(248, 243, 243)';
+            document.getElementById('fileButton').style.backgroundColor = 'transparent';
+        }
+
+        function showF(){
+            document.getElementById('f').style.display = 'block';
+            document.getElementById('a').style.display = 'none';
+            document.getElementById('f').classList.add("animated");
+            document.getElementById('a').classList.remove("animated");
+            document.getElementById('m').style.display = 'none';
+            document.getElementById('fileButton').style.backgroundColor = 'rgb(248, 243, 243)';
+            document.getElementById('audioButton').style.backgroundColor = 'transparent';
+        }
+
+
+        function changeButtonColor(buttonId) {
+           let button =  document.getElementById(buttonId)
+           button.classList.add("selected");
+        }
+        
+        function resetButtonColor(buttonId) {
+            document.getElementById(buttonId).classList.remove("selected");
+        }
+
+
+    function sendMessage() {
+        let messageBox = document.getElementById("message");
+        let chat = document.getElementById("chat");
+        
+        if (messageBox.value.trim() === "") return;
+        
+        let messageDiv = document.createElement("div");
+        messageDiv.classList.add("message", "user1");
+        messageDiv.textContent = messageBox.value;
+        chat.appendChild(messageDiv);
+        
+        messageBox.value = "";
+        chat.scrollTop = chat.scrollHeight;
+        
+        setTimeout(receiveMessage, 1000);
+    }
+
+
+    function sendAudio() {
+            let audioInput = document.getElementById("audioFile");
+            let chat = document.getElementById("chat");
+            
+            if (!audioInput.files.length) return;
+            
+            let file = audioInput.files[0];
+            let audioURL = URL.createObjectURL(file);
+            
+            let audioDiv = document.createElement("div");
+            audioDiv.classList.add("message", "user1");
+            
+            let audioElement = document.createElement("audio");
+            audioElement.controls = true;
+            audioElement.src = audioURL;
+            
+            audioDiv.appendChild(audioElement);
+            chat.appendChild(audioDiv);
+            
+            chat.scrollTop = chat.scrollHeight;
+            resetButtonColor("fileButton");
+            setTimeout(receiveMessage, 1000);
+        }
+
+
+        function sendFile() {
+            let fileInput = document.getElementById("fileInput");
+            let chat = document.getElementById("chat");
+            
+            if (!fileInput.files.length) return;
+            
+            let file = fileInput.files[0];
+            let fileURL = URL.createObjectURL(file);
+            
+            let fileDiv = document.createElement("div");
+            fileDiv.classList.add("message", "user1");
+            
+            let linkElement = document.createElement("a");
+            linkElement.href = fileURL;
+            linkElement.textContent = `Download ${file.name}`;
+            linkElement.target = "_blank";
+            fileDiv.appendChild(linkElement);
+            
+            chat.appendChild(fileDiv);
+            chat.scrollTop = chat.scrollHeight;
+            resetButtonColor("fileButton");
+            setTimeout(receiveMessage, 1000);
+        }
+    
+    function receiveMessage() {
+        let chat = document.getElementById("chat");
+        let messageDiv = document.createElement("div");
+        messageDiv.classList.add("message", "user2");
+        messageDiv.textContent = "This is a reply from User 2.";
+        chat.appendChild(messageDiv);
+        chat.scrollTop = chat.scrollHeight;
+    }
+
+
+
+</script>
+</body>
+</html>
