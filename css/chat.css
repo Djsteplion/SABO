@@ -1,0 +1,471 @@
+:root{
+    --body-pl: 35px;
+    --txt-color-primary: rgba(8,41,124,1);
+}
+
+html {
+    scrollbar-width: none; /* Firefox */
+}
+html::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
+}
+
+
+body, html{
+    overflow-x: hidden!important;
+    margin: 0;
+    padding: 0;
+}
+
+.mobileDiv{
+    display: none;
+}
+
+.Navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    border-bottom: 0.001px solid var(--txt-color-primary);
+}
+
+.logoAndNav{
+    display: flex;
+    align-items: center;
+}
+
+.Sabo-Logo{
+    width: 12%;
+}
+
+.navButtons{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-left: 30px;
+}
+
+.navButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navButton a{
+    text-decoration-line: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    color:var(--txt-color-primary);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29.26px;
+    font-family: 'Montserrat',sans-serif;
+    transition: 300ms;
+}
+
+.navButton a:hover{
+    color: black;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.navIcons{
+    display: flex;
+}
+
+.navIcons img{
+    margin-left:20px;
+    width: 15%;
+}
+
+.navIcons img:hover{
+    cursor: pointer;
+}
+
+/** Chat Interface Container *****/
+.chatCont{
+    border:3px solid var(--txt-color-primary) ;
+    border-radius: 10px;
+    margin-left:17%;
+    margin-right: 60px;
+    display: flex;
+    text-align: center;
+    width:fit-content;
+}
+
+.leftCont{
+    background-color: #E0E0E0;
+}
+
+.topCot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:5px 10px 5px 7px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 5px 5px 5px 1px;
+}
+
+.topCot p{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.cName{
+    margin-left: 35px;
+}
+
+.topCot img{
+    width: 25px;
+    height: 18px;
+}
+
+.topCot img:hover{
+    cursor: pointer;
+}
+
+.contact1{
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #f9f4f4;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    margin: 5px 5px 5px 1px;
+}
+
+.contact2{
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    margin: 5px 5px 5px 1px;
+}
+
+.contactImg{
+    position: relative;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+}
+
+.contactImg img{
+    position: absolute;
+}
+
+.contactImg p{
+    position: absolute;
+    color: white;
+
+}
+
+/** right cont ***/
+
+.rightCont{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: none; 
+}
+
+.topBar{
+    margin-top:5px 20px;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+}
+
+.searchplace{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.searchName{
+    width: 400px;
+    height: 55px;
+    font-size: 18px;
+    color: Black;
+    font-weight: 700;
+    border-radius: 8px;
+    border-color:none;
+    border-width: 0px;
+    background-color: #E0E0E0;
+    padding-left:40px;
+    box-shadow: 0px 1px rgba(0,0,0.2);
+}
+
+.searchName:hover{
+    color: white;
+    background-color: var(--txt-color-primary);
+}
+
+.searchplace img{
+    position:absolute;
+    width: 30px;
+    height: 25px;
+    padding-left: 3px;
+}
+
+.searchplace img:hover{
+    cursor: pointer;
+    transition: 350ms;
+}
+
+/*** ChatMessages Div **/
+
+.chatMessages{
+    width: 570px; 
+    height: 400px;
+     overflow-x: none;
+     overflow-y: scroll; 
+     padding: 2px;
+      display: flex; flex-direction: column;
+}
+
+.chatMessages::-webkit-scrollbar {
+    display: none; /* Permits scrolling, but hides scrollbar For Chrome, Safari, and Edge */
+}
+
+.user1 { 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #dcf8c6;
+     align-self: flex-end;
+     max-width: 70%;  /* Set a max width for the message */
+     word-wrap: break-word; /* Ensures long words break */
+     overflow-wrap: break-word; /* Alternative for word-breaking */
+     white-space: pre-wrap; /* Keeps spaces and new lines */
+     padding: 8px;
+     border-radius: 10px;
+     background-color: #d1e7dd; /* Light green for user 1 */
+     display: inline-block;
+
+}
+.user2 { 
+    background-color: #fff;
+     align-self: flex-start; 
+     max-width: 70%;  /* Set a max width for the message */
+     word-wrap: break-word; /* Ensures long words break */
+     overflow-wrap: break-word; /* Alternative for word-breaking */
+     white-space: pre-wrap; /* Keeps spaces and new lines */
+     padding: 8px;
+     border-radius: 10px;
+     color: white;
+     background-color: var(--txt-color-primary); /* Light green for user 1 */
+     display: inline-block;
+     margin-bottom: 5px;
+    }
+
+/** Bottom Bar **/
+
+.bottomBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+    border-top: 0.1px solid var(--txt-color-primary);
+    width:100%;
+}
+
+.typeMsg{
+    width: 382px;
+    height: 45px;
+    border: none;
+    background-color: #E0E0E0;
+    margin-left: 5px;
+    font-size: 20px;
+    color: Black;
+    font-weight: 700;
+}
+
+.typeMsg:focus{
+    outline: none;
+}
+
+.messagepack{
+    display: flex;
+    padding-right: 10px;
+    background-color: #E0E0E0;
+    border-radius: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-left:8px;
+}
+
+.selected { background-color: rgb(248, 243, 243); }
+
+#fileButton, #audioButton{
+    border-radius: 100%;
+    padding: 7px;
+}
+
+.audio{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Iaudio{
+    position: absolute;
+    width: 20%;
+    height: 60px;
+    opacity: 0;
+}
+
+.audio img{
+    position: relative;
+    margin-right: 20px;
+}
+
+.file{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Ifile{
+    position: absolute;
+    width: 20%;
+    height: 60px;
+    opacity: 0;
+}
+
+.file img{
+    position: relative;
+}
+
+.chatMsgBtn{
+    width: 40px;
+    height: 40px;
+    padding-left: 7px;
+    padding-right: 5px;
+}
+
+@keyframes buttonFlash {
+    0% {
+       transform: translateX(-3px);
+    }
+
+    50% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(3px);
+    }
+}
+
+.animated{
+    animation: buttonFlash 0.5s infinite alternate;
+}
+
+#a, #f{
+    display: none;
+}
+
+@media screen and (max-width:1020px){
+    
+    .Sabo-Logo{
+        width: 10%;
+    }
+
+    .Navbar{
+        padding-left: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .navButtons{
+        margin-left: 5px;
+    }
+    
+    .navButton a{
+        padding-left: 3px;
+        padding-right: 4px;
+        font-size: 12px;
+        line-height: 14.50px;
+    }
+
+    .navButton img{
+        width: 2.5px;
+        height: 22px;
+    }
+
+    .navIcons{
+        margin-left: 20px;
+    }
+
+    .navIcons img{
+        margin-left:7px;
+    }
+
+/** Chat Interface Container *****/
+
+    .rightCont{
+        width: 100%;
+    }
+
+    .flagUser{
+        width: 25px;
+        height: 25px;
+    }
+
+    .selectOpt{
+        height: 25px;
+    }
+
+    .searchName{
+        width: 200px;
+        height: 40px;
+        font-size: 13px;
+    }
+
+
+.chatCont{
+    border:3px solid var(--txt-color-primary) ;
+    border-radius: 10px;
+    margin-left:15px;
+    margin-right: 5px;
+}
+
+/*** ChatMessages Div **/
+
+    .chatMessages{
+     width:300px; 
+     height:550px;
+    }
+
+    
+    .leftCont{
+        display: none;
+    }
+
+
+ /** Bottom Bar **/
+
+.audio img, .file img{
+    width: 25px;
+    height: 25px;
+}
+
+.typeMsg{
+    width: 200px;
+    height: 45px;
+    font-size:14px;
+}
+
+
+
+}
+
+

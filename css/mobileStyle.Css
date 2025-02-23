@@ -393,6 +393,12 @@
 
     .hImg{
         text-align: center;
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
+    .hImg img{
+        width: 100%;
     }
 
     .CM{
