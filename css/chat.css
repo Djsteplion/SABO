@@ -441,12 +441,12 @@ body, html{
 /*** ChatMessages Div **/
 
    .chatMessages{
-    margin-left: -10px;
+    margin-left: 4px;
    }
 
     .chatMessages{
-     width:290px; 
-     height:580px;
+     width:315px; 
+     height:700px;
     }
 
     
