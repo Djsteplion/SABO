@@ -407,6 +407,7 @@ body, html{
 
     .navIcons img{
         margin-left:7px;
+        width: 7%;
     }
 
 /** Chat Interface Container *****/
@@ -434,15 +435,19 @@ body, html{
 .chatCont{
     border:3px solid var(--txt-color-primary) ;
     border-radius: 10px;
-    margin-left:15px;
+    margin-left:8px;
     margin-right: 5px;
 }
 
 /*** ChatMessages Div **/
 
+   .chatMessages{
+    margin-left: -40px;
+   }
+
     .chatMessages{
-     width:300px; 
-     height:550px;
+     width:240px; 
+     height:310px;
     }
 
     
@@ -458,13 +463,22 @@ body, html{
     height: 25px;
 }
 
-.typeMsg{
-    width: 200px;
-    height: 45px;
-    font-size:14px;
+.audio img{
+    margin-right: 0px;
 }
 
+.typeMsg{
+    width: 150px;
+    height: 40px;
+    font-size:11px;
+}
 
+.chatMsgBtn{
+    width:30px;
+    height: 30px;
+    padding-left:0px;
+    padding-right: 3px;
+}
 
 }
 
