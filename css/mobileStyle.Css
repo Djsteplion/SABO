@@ -1,4 +1,4 @@
-@media screen and (max-width:1000px){
+@media screen and (max-width:800px){
 
     :root{
         --body-pl: 5px;
@@ -266,6 +266,54 @@
         transition: 500ms;
     }
 
+    .navIcons{
+        margin-left: 20px;
+    }
+
+    .navIcons img{
+        margin-left:7px;
+    }
+
+    #search-bar2{
+        justify-content: center;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    .hidden2{
+        display: none;
+    }
+
+    .searchBarAndIcon2{
+        border: 1.5px solid var(--txt-color-primary);
+        width: 170px;
+        border-radius: 3px;
+        height: 20px;
+        background-color: white; 
+        padding:4px 8px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .searchBar2{
+        border-width: 0px;
+        border-color: none;
+        padding: 4px;
+        border-radius: 3px;
+        height: 10px;
+        width: 149px;
+        background-color: white;
+    }
+
+    .lens2{
+        color: var(--txt-color-primary);
+    }
+
+    input:focus{
+        outline: none;
+    }
+
     .connectM{
         display: flex;
         flex-direction: row;
@@ -274,12 +322,12 @@
     }
 
     .ht{
-        color: white;
+        color: var(--txt-color-primary);
         font-weight: 500;
         font-size: var(--txt-color-primary);
         animation-name: textFade;
         animation-duration: 5s;
-        animation-iteration-count: infinite;
+        animation-iteration-count:1;
         animation-direction: alternate;
         animation-timing-function: linear;
     }
@@ -289,27 +337,27 @@
         margin-top: -13px;
         animation-name: textFade;
         animation-duration: 5s;
-        animation-iteration-count: infinite;
+        animation-iteration-count: 1;
     }
 
     .exM h2{
-        color: white;
+        color: var(--txt-color-primary);
         font-weight: 600;
         animation-name: textFade;
         animation-duration: 5s;
-        animation-iteration-count: infinite;
+        animation-iteration-count: 1;
         animation-direction: alternate;
         animation-timing-function: linear;
     }
 
     .exM p{
-       color: white; 
+       color: var(--txt-color-primary); 
        font-size: 15px;
        margin-top: -13px;
        font-weight: 600;
        animation-name: textFade;
        animation-duration: 5s;
-       animation-iteration-count: infinite;
+       animation-iteration-count: 1;
        animation-direction: alternate;
        animation-timing-function: linear;
     }
@@ -430,16 +478,9 @@
     }
 
     .heroM{
-        background-color: linear-gradient(white,rgba(8,41,124,0.3));
+        background-image:linear-gradient(white,rgba(8,41,124,0.7));
         margin-left: 0px!important;
         margin-right: 0px!important;
-        margin-top: -7px;
-        padding-top: 25px;
-        animation-name: heroAnima;
-        animation-duration: 5s;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        animation-timing-function: linear;
     }
 
 
@@ -561,15 +602,14 @@
 
     .Ess{
         background-color: white;
-        margin: 17px 7px 0px 7px;
+        margin: 17px 15px 0px 15px;
         padding: 8px;
     }
 
      .clt{
-        background-color: white;
-        border: 0.5px solid var(--txt-color-primary);
+       
         margin: 10px 7px;
-        padding-bottom: 20px;
+        padding-bottom: 0px;
      }
 
     .cltImgAndText{
@@ -603,37 +643,72 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        
+        margin-top: -25px;
         border-top: 0.5px solid var(--txt-color-primary);
         border-bottom: 0.5px solid var(--txt-color-primary);
+        background-color: white;
     }
 
     .tr{
-        border-right: 0.5px solid var(--txt-color-primary);
+        border-right: 4px solid var(--txt-color-primary);
         padding-left: 5px;
         padding-right: 5px;
-        padding-top: 8px;
-        padding-bottom: 8px;
+        padding-top: 25px;
+        padding-bottom: 15px;
         color: var(--txt-color-primary);
     }
 
     .trp{
         padding-left: 10px;
-        padding-top: 8px;
-        padding-bottom: 8px;
+        padding-top: 25px;
+        padding-bottom: 15px;
     }
 
     .traderImgAndName{
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .traderImage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        width: 100px;
+        height: 100px;
+        padding-bottom: 5px;
+    }
+    
+    .traderImage img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     .trader1{
-        margin: 20px 0px;
+        margin: 20px 5px;
         padding: 5px;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 26%;
+    }
+
+    .exchangeName{
+        font-size: 10px;
+    }
+
+    .exchangeLocation{
+        color: green;
+        font-size: 11px;
+        font-weight: 700;
+        margin-top: -10px;
     }
 
     .trader1 img{
@@ -650,11 +725,11 @@
 
     .msgbtn{
         text-decoration-line: none;
-        padding: 8px 40px;
-        border: 0.5px solid var(--txt-color-primary);
-        background-color: var(--txt-color-primary);
-        color: white;
-        font-size: 12px;
+        padding: 8px 20px;
+        background-color: #E0E0E0;
+        color:var(--txt-color-primary);
+        font-size: 16px;
+        font-weight: 700;
         border-radius: 4px;
     }
 
@@ -668,7 +743,6 @@
     .seeall{
         text-align: right;
         padding: 4px 25px 19px 0px;
-        border-bottom: 4px solid var(--txt-color-primary);
     }
 
     .seeAll{
@@ -676,6 +750,9 @@
         color: var(--txt-color-primary);
         font-size: 11px;
         font-weight: 500;
+        border: 1px solid #E0E0E0;
+        border-radius: 2.5px;
+        padding: 5px 10px;
     }
 
     .Aimg{
@@ -683,16 +760,21 @@
     }
 
     .Atitle{
+        margin-top: 30px;
+        line-height: 0px;
         text-align: center;
+        border-bottom: 4px solid var(--txt-color-primary);
     }
 
     .Atext{
         padding: 0px 5px 5px 5px;
-        margin-top: -5px;
+        margin: -5px 35px 5px 35px;
+        text-align: center;
     }
 
     .Atext p{
-        font-size: 11px;
+        font-size: 13px;
+        line-height: 15px;
     }
 
     .Gtitle{
@@ -708,7 +790,9 @@
 
     .Gtxt1{
         text-align: center;
-        padding: 10px 5px;
+        padding: 10px 45px;
+        font-size: 14px;
+        line-height: 17px;
     }
 
     .Gimg2{
@@ -718,7 +802,9 @@
 
     .Gtxt2{
         text-align: center;
-        padding: 10px 5px;
+        padding: 10px 45px;
+        font-size: 14px;
+        line-height: 17px;
     }
 
     .wimg{
@@ -736,8 +822,8 @@
         justify-content: space-around;
         background-repeat: no-repeat!important;
         background-size: cover;
-        padding-top: 80px;
-        padding-bottom: 40px;
+        padding-top: 100px;
+        padding-bottom: 60px;
     }
 
     .fl{

@@ -3,20 +3,8 @@
     --txt-color-primary: rgba(8,41,124,1);
 }
 
-body,html{
-    margin:0px !important;
-}
 
-/* body{
-    animation-name: heroAnima;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-*/    
+/* NAVBAR STYLE  */
 
 .navbar{
     display: flex;
@@ -75,83 +63,7 @@ body,html{
 }
 
 
-@keyframes heroAnima {
-    0% { background-color: rgba(8, 41, 124, 1); }
-    1% { background-color: rgba(8, 41, 124, 0.99); }
-    2% { background-color: rgba(8, 41, 124, 0.98); }
-    3% { background-color: rgba(8, 41, 124, 0.97); }
-    4% { background-color: rgba(8, 41, 124, 0.96); }
-    5% { background-color: rgba(8, 41, 124, 0.95); }
-    6% { background-color: rgba(8, 41, 124, 0.94); }
-    7% { background-color: rgba(8, 41, 124, 0.93); }
-    8% { background-color: rgba(8, 41, 124, 0.92); }
-    9% { background-color: rgba(8, 41, 124, 0.91); }
-    10% { background-color: rgba(8, 41, 124, 0.90); }
-    11% { background-color: rgba(8, 41, 124, 0.89); }
-    12% { background-color: rgba(8, 41, 124, 0.88); }
-    13% { background-color: rgba(8, 41, 124, 0.87); }
-    14% { background-color: rgba(8, 41, 124, 0.86); }
-    15% { background-color: rgba(8, 41, 124, 0.85); }
-    16% { background-color: rgba(8, 41, 124, 0.84); }
-    17% { background-color: rgba(8, 41, 124, 0.83); }
-    18% { background-color: rgba(8, 41, 124, 0.82); }
-    19% { background-color: rgba(8, 41, 124, 0.81); }
-    20% { background-color: rgba(8, 41, 124, 0.80); }
-    21% { background-color: rgba(8, 41, 124, 0.79); }
-    22% { background-color: rgba(8, 41, 124, 0.78); }
-    23% { background-color: rgba(8, 41, 124, 0.77); }
-    24% { background-color: rgba(8, 41, 124, 0.76); }
-    25% { background-color: rgba(8, 41, 124, 0.75); }
-    26% { background-color: rgba(8, 41, 124, 0.74); }
-    27% { background-color: rgba(8, 41, 124, 0.73); }
-    28% { background-color: rgba(8, 41, 124, 0.72); }
-    29% { background-color: rgba(8, 41, 124, 0.71); }
-    30% { background-color: rgba(8, 41, 124, 0.70); }
-    31% { background-color: rgba(8, 41, 124, 0.69); }
-    32% { background-color: rgba(8, 41, 124, 0.68); }
-    33% { background-color: rgba(8, 41, 124, 0.67); }
-    34% { background-color: rgba(8, 41, 124, 0.66); }
-    35% { background-color: rgba(8, 41, 124, 0.65); }
-    36% { background-color: rgba(8, 41, 124, 0.64); }
-    37% { background-color: rgba(8, 41, 124, 0.63); }
-    38% { background-color: rgba(8, 41, 124, 0.62); }
-    39% { background-color: rgba(8, 41, 124, 0.61); }
-    40% { background-color: rgba(8, 41, 124, 0.60); }
-    41% { background-color: rgba(8, 41, 124, 0.59); }
-    42% { background-color: rgba(8, 41, 124, 0.58); }
-    43% { background-color: rgba(8, 41, 124, 0.57); }
-    44% { background-color: rgba(8, 41, 124, 0.56); }
-    45% { background-color: rgba(8, 41, 124, 0.55); }
-    46% { background-color: rgba(8, 41, 124, 0.54); }
-    47% { background-color: rgba(8, 41, 124, 0.53); }
-    48% { background-color: rgba(8, 41, 124, 0.52); }
-    49% { background-color: rgba(8, 41, 124, 0.51); }
-    50% { background-color: rgba(8, 41, 124, 0.50); }
-    51% { background-color: rgba(8, 41, 124, 0.49); }
-    52% { background-color: rgba(8, 41, 124, 0.48); }
-    53% { background-color: rgba(8, 41, 124, 0.47); }
-    54% { background-color: rgba(8, 41, 124, 0.46); }
-    55% { background-color: rgba(8, 41, 124, 0.45); }
-    56% { background-color: rgba(8, 41, 124, 0.44); }
-    57% { background-color: rgba(8, 41, 124, 0.43); }
-    58% { background-color: rgba(8, 41, 124, 0.42); }
-    59% { background-color: rgba(8, 41, 124, 0.41); }
-    60% { background-color: rgba(8, 41, 124, 0.40); }
-    61% { background-color: rgba(8, 41, 124, 0.39); }
-    62% { background-color: rgba(8, 41, 124, 0.38); }
-    63% { background-color: rgba(8, 41, 124, 0.37); }
-    64% { background-color: rgba(8, 41, 124, 0.36); }
-    65% { background-color: rgba(8, 41, 124, 0.35); }
-    66% { background-color: rgba(8, 41, 124, 0.34); }
-    67% { background-color: rgba(8, 41, 124, 0.33); }
-    68% { background-color: rgba(8, 41, 124, 0.32); }
-    69% { background-color: rgba(8, 41, 124, 0.31); }
-    70% { background-color: rgba(8, 41, 124, 0.30); }
-    100% { background-color: rgba(8, 41, 124, 0); }
-  }
-  
-
-/* SIGN UP & SIGN IN FORM STYLE */
+/* SIGN UP STYLE */
 
 .signUpCont{
     display: flex;
@@ -231,14 +143,6 @@ body,html{
     box-shadow: 0px 1px rgba(0,0,0.2);
 }
 
-.epm{
-    width: 382px;
-    height: 27.5px;
-    font-size: 16px;
-    border-color: #08297C;
-    box-shadow: 0px 1px rgba(0,0,0.2);
-}
-
 .emailOrPhone input, .password input, .cpassword input, .phonenumber input{
     margin-top: -10px;
 }
@@ -301,7 +205,7 @@ body,html{
     font-weight: 600;
     line-height: 29.26px;
     text-decoration-line: none;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 .signInFinalButton:hover{
@@ -403,6 +307,8 @@ body,html{
 
 
 
+
+
 @media screen and (max-width:600px){
 
     body,html{
@@ -411,7 +317,7 @@ body,html{
     }
 
     .navbar{
-        padding: 5px 10px 0px 8px;
+        padding: 5px 10px 0px 10px;
         margin: 0px!important;
     }
 
@@ -447,14 +353,13 @@ body,html{
 }
 
 
-.signUpCont{
-    padding: 15px 15px;
-}
+    .signUpCont{
+        padding: 15px 15px;
+    }
 
-.signInCont{
-    padding: 10px 15px;
-}
-
+    .signInCont{
+        padding: 10px 15px;
+    }
 
     .L{
         margin-right: 7px;
@@ -507,7 +412,7 @@ body,html{
     }
 
     .signupFinalButton{
-        width: 280px;
+        width: 285px;
         height: 40px;
         border-radius: 5px;
         font-size: 13px;

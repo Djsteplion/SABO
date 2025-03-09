@@ -17,7 +17,7 @@ body, html{
     padding: 0;
 }
 
-.mobileDiv{
+.mobileMode{
     display: none;
 }
 
@@ -373,7 +373,15 @@ body, html{
     display: none;
 }
 
-@media screen and (max-width:1020px){
+@media screen and (max-width:800px){
+
+    .mobileMode{
+        display: block;
+    }
+
+    .desktopMode{
+        display: none;
+    }
     
     .Sabo-Logo{
         width: 10%;
@@ -411,8 +419,30 @@ body, html{
 
 /** Chat Interface Container *****/
 
+    .chatContainerEnv{
+        width: 100%;
+        height: 100vh;
+    }
+
+    .chatContainer{
+        border: 1px solid var(--txt-color-primary);
+        margin: 0px 5px 0px 5px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        height:99vh;
+        border-radius: 10px;
+    }
+
+    .chatCont{
+        width: 320px;
+        height: 100vh;
+        margin-left: 40px;
+    }
+
     .rightCont{
         width: 100%;
+        height: 100vh;
     }
 
     .flagUser{
@@ -425,7 +455,7 @@ body, html{
     }
 
     .searchName{
-        width: 200px;
+        width: 235px;
         height: 40px;
         font-size: 13px;
     }
@@ -445,11 +475,12 @@ body, html{
 
    .chatMessages{
     margin-left: 4px;
+    padding: 4px;
    }
 
     .chatMessages{
-     width:315px; 
-     height:450px;
+     width:inherit; 
+     height: inherit;
     }
 
     
@@ -482,6 +513,33 @@ body, html{
     padding-right: 15px;
 }
 
+.messagepack{
+    width: inherit;
+    padding-right: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 8px;
+}
+
+.mediaDiv{
+    display: flex;
+}
+
+#a2, #f2{
+    display: none;
+}
+
+
+}
+
+
+@media screen and (max-width:350px) {
+    .searchName{
+        width: 200px;
+        height: 40px;
+        font-size: 13px;
+    }
+    
 }
 
 
