@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabo || SignUp Successful</title>
+
+    <style>
+        .mainCont{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .congratsCont{
+            width: 70%;
+            text-align: center;
+            border-radius: 10px;
+            padding: 60px 30px;
+            background-color:white ;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .congrats{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .checkMark{
+            font-size: 33px;
+            color: white;
+            animation: fadeInOut 1.5s infinite;
+        }
+
+        .checkBg{
+            background-color:  rgb(66, 66, 203);
+            border-radius: 5px;
+            padding: 0px 20px 5px 20px;
+            margin-left: 10px;
+            width: max-content;
+        }
+
+        @keyframes fadeInOut {
+            0%{ opacity: 0;}
+            50%{ opacity: 1;}
+            100%{ opacity: 0;}
+        }
+
+        .Ctext{
+            font-size: 25px;
+            font-size: 700;
+        }
+
+        .ctext{
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        .backToLogin{
+            color: white;
+            text-decoration-line: none;
+            font-size: 20px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color:  rgb(66, 66, 203);
+            font-weight: 700;
+        }
+
+        @media screen and (max-width:600px){
+        .mainCont{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .congratsCont{
+            width: 80%;
+            margin-top: 30px;
+        }
+
+        .congrats{
+            margin-top: -7px;
+        }
+
+        .Ctext{
+            font-size: 14px;
+        }
+
+        .ctext{
+            font-size: 14px;
+        }
+
+        .backToLogin{
+            font-size: 11px;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .checkMark{
+            font-size: 19px;
+        }
+
+        .checkBg{
+            padding: 0px 10px 2.5px 10px;
+            margin-left: 5px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="mainCont">
+        <div class="congratsCont">
+            <p class="Ctext">Congrats!</p>
+             <div class="congrats">
+                <p class="ctext">Account Created Successfully</p>
+                <div class="checkBg">
+                    <span class="checkMark"> &#10004;</span>
+                </div>
+             </div>
+             <a href="vendorLoginAndSignUp.html" class="backToLogin">
+                <span>Back to Login</span>
+                <span> &#10132; </span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

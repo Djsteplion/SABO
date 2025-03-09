@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabo || User Sign in</title>
+    <link rel="stylesheet" href="css/userSign.css">
+</head>
+<body>
+
+<!--Navigation Bar container-->
+<div class="navbar">
+    <img src="images\saboo.png" alt="Sabo-Logo" class="Sabo-Logo">
+    <div class="signOptions">
+        <p class="signIn" onclick="showSignInForm()">Sign in</p>
+        <p class="signUp" onclick="showSignUpForm()">Sign up</p>
+    </div>
+</div>
+
+<!--This is the div containing the sign up form-->
+<div class="signUpCont" id="signUpCont1">
+    <form action="#" class="signUpForm">
+        <div class="languages">
+            <span class="L">English</span>
+            <span class="L">Yoruba</span>
+            <span class="L">Hausa</span>
+            <span class="L">Igbo</span>
+        </div>
+        <div class="emailOrPhone">
+            <p class="instruct">Register with email or phone number</p>
+            <input type="text" name="" id="" class="ep" placeholder="Enter your email or phone number">
+        </div>
+        <div class="password">
+            <p class="instruct">Please set up your password</p>
+            <input type="text" name="" id="" class="ep" placeholder="Password must include 8 characters">
+        </div>
+        <div class="cpassword">
+            <p class="instruct">Please confirm your password</p>
+            <input type="text" name="" id="" class="ep" placeholder="Password must be the same">
+        </div>
+        <div class="FirstName">
+            <input type="text" class="ep" placeholder="First name">
+        </div>
+        <div class="LastName">
+            <input type="text" class="ep" placeholder="Last name">
+        </div>
+        <div class="phonenumber">
+            <p class="instruct">Please enter your phone number</p>
+            <input type="text" name="" id="" class="ep" placeholder="+2348039263055">
+        </div>
+        <div class="agreebox">
+            <input type="checkbox" name="" id="" class="abox" value="agreed">
+            <a href="#" class="terms">I agree with the terms and conditions</a>
+        </div>
+        <button class="signupFinalButton" type="submit">Sign Up</button>
+        <div class="orWith">
+            <span class="demarcation1">.............////////////...........</span>
+            <span class="demarcation2">or with</span>
+            <span class="demarcation3">.............///////////...........</span>
+        </div>
+        <div class="googleOrFacebook">
+            <div class="google">
+                <img src="images/Google Logos By hrhasnai (1).png" alt="Google logo">
+                <p class="googleText">Google</p>
+            </div>
+            <div class="facebook">
+                <img src="images/f.png" alt="facebookLogo">
+                <img src="images/facebook.png" alt="facebookLogo" class="flogo">
+            </div>
+        </div>
+        <div class="alreadyHaveAnAccount">
+            <p class="already">Already have an account?</p>
+            <a href="#" class="log" onclick="showSignInForm()">Sign in</a>
+        </div>
+    </form>
+</div>
+
+<!--This is the div containing the sign in form--->
+<div class="signInCont" id="signInCont1">
+    <form action="#" class="signInForm">
+        <div class="languages">
+            <span class="L">English</span>
+            <span class="L">Yoruba</span>
+            <span class="L">Hausa</span>
+            <span class="L">Igbo</span>
+        </div>
+        <div class="emailOrPhone">
+            <p class="instruct">Sign in with email or phone number</p>
+            <input type="text" name="" id="" class="ep" placeholder="Please enter registered email or phone number">
+        </div>
+        <div class="password">
+            <p class="instruct">Please input your password</p>
+            <input type="text" name="" id="" class="ep" placeholder="Please enter your password">
+        </div>
+        <button class="signInFinalButton" type="submit">Sign in</button>
+        <div class="orWith">
+            <span class="demarcation1">.............////////////...........</span>
+            <span class="demarcation2">or with</span>
+            <span class="demarcation3">.............///////////...........</span>
+        </div>
+        <div class="googleOrFacebook">
+            <div class="google">
+                <img src="images/Google Logos By hrhasnai (1).png" alt="Google logo">
+                <p class="googleText">Google</p>
+            </div>
+            <div class="facebook">
+                <img src="images/f.png" alt="facebookLogo">
+                <img src="images/facebook.png" alt="facebookLogo" class="flogo">
+            </div>
+        </div>
+        <div class="alreadyHaveAnAccount">
+            <p class="already">Don't have an account?</p>
+            <a href="#" class="log" onclick="showSignUpForm()">Sign up</a>
+        </div>
+    </form>
+</div>
+
+<script>
+    var showSignUpForm = () => {
+        document.getElementById('signInCont1').style.display = 'none';
+        document.getElementById('signUpCont1').style.display = 'block';
+        document.getElementById('signUpCont1').style.display = 'flex';
+    }
+
+    var showSignInForm = () => {
+        document.getElementById('signUpCont1').style.display = 'none';
+        document.getElementById('signInCont1').style.display = 'block';
+        document.getElementById('signInCont1').style.display = 'flex';
+    }
+    </script>
+</body>
+</html>

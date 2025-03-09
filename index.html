@@ -11,7 +11,7 @@
 <body>
 
 
-<!--This is the Container wrapping the whole html code in this html file-->   
+<!--This is the Container wrapping the html code for desktop code-->   
 <div class="containerWrapper">
 <div class="container">
 
@@ -56,21 +56,34 @@
 
 
     <div class="navBtnSigns">
-        <span class="navBtnSignIn" onclick="showSignInForm()">
-            <p class="signIn">Sign in</p>
-        </span>
-
-        <span>
-            <p class="signUp" id='signUp' onclick="showSignUpForm()">Get started</p>
-        </span>
+        <img src="images/Group 1051.png" alt="search icon" id="search-icon" class="searchIcon">
+        <a href="./userSignInAndSignUp.html" class="signIn">Sign in</a>
+        <a href="./userSignInAndSignUp.html" class="signUp">Get started</a>
     </div>
 
+    <!--This is the part that becomes visible after the user logs in-->
+    <!--
+    <div class="navIcons">
+        <img src="images/Group 1051.png" alt="search icon">
+        <img src="images/Group 885.png" alt="notification icon">
+        <img src="images/Group 884.png" alt="message icon">
+        <img src="images/Ellipse 133.png" alt="user's avatar">
+    </div>
+    --->
+
    </div>
-  </div>
+</div>
 <!--This div goes under when the login or sign up button is clicked-->
 <div class="rp" id="rp">
-      <!--This is the Hero Section Container--> 
-  <div class="heroSection">
+    <!--This is the Hero Section Container--> 
+ <div class="heroSection">
+ <!--Search Bar---->
+    <div class="hidden"  id="search-bar">
+        <div class="searchBarAndIcon">
+            <input type="text" name="" id="" class="searchBar"   placeholder="I am looking for... ">
+            <span class="lens">&#128269;</span>
+        </div>
+    </div>
     <div class="hero">
         <div class="hero1-compartment">
             <div class="ctb">
@@ -251,35 +264,53 @@
     <div class="tradersbox">
     <div class="top-rated-traders-imgAndMsgBtn">
             <div class="Tr-Trader-Img-Container1"  id="ActiveTraders">
-                <img src="images/Frame 1194 (1).png" alt="">
-                <p class="trdname">Babayaro Exchange<br> Ajibode Mokola</p>
+                <div class="traderImgContainer">
+                    <img src="images/Frame 1194.png" alt="">  
+                </div>
+                <p class="trdname">Babayaro Exchange</p>
+                <p class="traderLocation">Ajibode Mokola</p>
                 <a href="./chat.html" class="msgTrdBtn">Message</a>
             </div>
             <div class="Tr-Trader-Img-Container1">
-                <img src="images/Frame 1194.png" alt="">
-                <p class="trdname">Babayaro Exchange<br> Ajibode Mokola</p>
+                <div class="traderImgContainer">
+                    <img src="images/Frame 1194.png" alt="">  
+                </div>
+                <p class="trdname">Babayaro Exchange</p>
+                <p class="traderLocation">Ajibode Mokola</p>
                 <a href="./chat.html" class="msgTrdBtn">Message</a>
             </div>
             <div class="Tr-Trader-Img-Container1">
-                <img src="images/Frame 1194 (1).png" alt="">
-                <p class="trdname">Babayaro Exchange<br> Ajibode Mokola</p>
+                <div class="traderImgContainer">
+                    <img src="images/Frame 1194 (1).png" alt="">  
+                </div>
+                <p class="trdname">Babayaro Exchange</p>
+                <p class="traderLocation">Ajibode Mokola</p>
                 <a href="./chat.html" class="msgTrdBtn">Message</a>
             </div>
     </div>
     <div class="top-rated-traders-imgAndMsgBtn">
             <div class="Tr-Trader-Img-Container1"  id="ActiveTraders">
-                <img src="images/Frame 1194 (1).png" alt="">
-                <p class="trdname">Babayaro Exchange<br> Ajibode Mokola</p>
+                <div class="traderImgContainer">
+                    <img src="images/Frame 1194 (1).png" alt="">  
+                </div>
+                <p class="trdname">Babayaro Exchange</p>
+                <p class="traderLocation">Ajibode Mokola</p>
                 <a href="./chat.html" class="msgTrdBtn">Message</a>
             </div>
             <div class="Tr-Trader-Img-Container1">
-                <img src="images/Frame 1194.png" alt="">
-                <p class="trdname">Babayaro Exchange<br> Ajibode Mokola</p>
+                <div class="traderImgContainer">
+                    <img src="images/Frame 1194.png" alt="">
+                </div>
+                <p class="trdname">Babayaro Exchange</p>
+                <p class="traderLocation">Ajibode Mokola</p>
                 <a href="./chat.html" class="msgTrdBtn">Message</a>
             </div>
             <div class="Tr-Trader-Img-Container1">
-                <img src="images/Frame 1194 (1).png" alt="">
-                <p class="trdname">Babayaro Exchange<br> Ajibode Mokola</p>
+                <div class="traderImgContainer">
+                    <img src="images/Frame 1194 (1).png" alt="">  
+                </div>
+                <p class="trdname">Babayaro Exchange</p>
+                <p class="traderLocation">Ajibode Mokola</p>
                 <a href="./chat.html" class="msgTrdBtn">Message</a>
             </div>
     </div> 
@@ -430,7 +461,7 @@
             <a href="#">Billing Policy</a>
             <a href="#">Cookie Policy</a>
         </div>
-        <div class="footer2">
+           <div class="footer2">
             <a href="#">Support</a>
             <a href="#">support@sabo.ng</a>
             <a href="#">Safety tips</a>
@@ -456,119 +487,7 @@
 </div>
 </div>
 
-<!--This is the div containing the sign up-->
-<div class="signUpCont" id="signUpCont1">
-    <div class="languages">
-        <span class="L">English</span>
-        <span class="L">Yoruba</span>
-        <span class="L">Hausa</span>
-        <span class="L">Igbo</span>
-    </div>
-    <div class="emailOrPhone">
-        <p class="instruct">Register with email or phone number</p>
-        <input type="text" name="" id="" class="ep" placeholder="Enter your email or phone number">
-    </div>
-    <div class="password">
-        <p class="instruct">Please set up your password</p>
-        <input type="text" name="" id="" class="ep" placeholder="Password must include 8 characters">
-    </div>
-    <div class="cpassword">
-        <p class="instruct">Please confirm your password</p>
-        <input type="text" name="" id="" class="ep" placeholder="Password must be the same">
-    </div>
-    <div class="FirstName">
-        <input type="text" class="ep" placeholder="First name">
-    </div>
-    <div class="LastName">
-        <input type="text" class="ep" placeholder="Last name">
-    </div>
-    <div class="phonenumber">
-        <p class="instruct">Please enter your phone number</p>
-        <input type="text" name="" id="" class="ep" placeholder="+2348039263055">
-    </div>
-    <div class="agreebox">
-        <input type="checkbox" name="" id="" class="abox" value="agreed">
-        <a href="#" class="terms">I agree with the terms and conditions</a>
-    </div>
-    <a href="#" class="signupFinalButton">Sign up</a>
-    <div class="orWith">
-        <span class="demarcation1">.............////////////...........</span>
-        <span class="demarcation2">or with</span>
-        <span class="demarcation3">.............///////////...........</span>
-    </div>
-    <div class="googleOrFacebook">
-        <div class="google">
-            <img src="images/Google Logos By hrhasnai (1).png" alt="Google logo">
-            <p class="googleText">Google</p>
-        </div>
-        <div class="facebook">
-            <img src="images/f.png" alt="facebookLogo">
-            <img src="images/facebook.png" alt="facebookLogo" class="flogo">
-        </div>
-    </div>
-    <div class="alreadyHaveAnAccount">
-        <p class="already">Already have an account?</p>
-        <a href="#" class="log" onclick="showSignInForm()">Sign in</a>
-    </div>
-</div>
-
-<!--This is the div containing the sign in--->
-<div class="signInCont" id="signInCont1">
-    <div class="languages">
-        <span class="L">English</span>
-        <span class="L">Yoruba</span>
-        <span class="L">Hausa</span>
-        <span class="L">Igbo</span>
-    </div>
-    <div class="emailOrPhone">
-        <p class="instruct">Sign in with email or phone number</p>
-        <input type="text" name="" id="" class="ep" placeholder="Please enter registered email or phone number">
-    </div>
-    <div class="password">
-        <p class="instruct">Please input your password</p>
-        <input type="text" name="" id="" class="ep" placeholder="Please enter your password">
-    </div>
-    <a href="#" class="signInFinalButton">Sign in</a>
-    <div class="orWith">
-        <span class="demarcation1">.............////////////...........</span>
-        <span class="demarcation2">or with</span>
-        <span class="demarcation3">.............///////////...........</span>
-    </div>
-    <div class="googleOrFacebook">
-        <div class="google">
-            <img src="images/Google Logos By hrhasnai (1).png" alt="Google logo">
-            <p class="googleText">Google</p>
-        </div>
-        <div class="facebook">
-            <img src="images/f.png" alt="facebookLogo">
-            <img src="images/facebook.png" alt="facebookLogo" class="flogo">
-        </div>
-    </div>
-    <div class="alreadyHaveAnAccount">
-        <p class="already">Don't have an account?</p>
-        <a href="#" class="log" onclick="showSignUpForm()">Sign up</a>
-    </div>
-</div>
-  
-
-
-
-
-<!--<div class="currencydisplay">
-    <div class="dollardis">
-        <img src="images/Ellipse 148.png" alt="" class="dollarD">
-        <img src="images/$.png" alt="" class="dollarDi">
-    </div>
-    <div class="naiardis">
-        <img src="images/Ellipse 149.png" alt="" class="nairaD">
-        <img src="images/#.png" alt="" class="nairaDi">
-    </div>
-    <div class="yuandis">
-        <img src="images/Ellipse 150.png" alt="" class="yuanD">
-        <img src="images/Y.png" alt="" class="yuanDi">
-    </div>
-</div>---->
-
+<!--This is the Container wrapping the html code for mobile mode-->   
 <div class="mobileContainer">
     <div class="navbarM">
         <div class="navbarlinkM1">
@@ -582,14 +501,32 @@
             <img src="images/Rectangle 573 (1).png" alt="">
             <a href="#blog" class="navlinkM">Blog</a>
         </div>
+        <!--This part is to be hidden once the user logs in-->
         <div class="navbarlinkM2">
-            <a href="#" class="signinM" onclick="showSignInForm()">Sign in</a>
-            <a href="#" class="signupM"  onclick="showSignUpForm()">Get Started</a>
+            <a href="./userSignInAndSignUp.html" class="signinM">Sign in</a>
+            <a href="./userSignInAndSignUp.html" class="signupM">Get Started</a>
         </div>
+        
+        <!--This is the part that becomes visible after the user logs in-->
+        <!---
+        <div class="navIcons">
+            <img src="images/Group 1051.png" alt="search icon" id="search-icon2">
+            <img src="images/Group 885.png" alt="notification icon">
+            <img src="images/Group 884.png" alt="message icon">
+            <img src="images/Ellipse 133.png" alt="user's avatar">
+        </div>
+        --->
     </div>
     <div class="mR" id="mR">
         <div class="heroM">
-            <!--Hero Container-->
+            <!--Search Bar---->
+            <div class="hidden2"  id="search-bar2">
+                <div class="searchBarAndIcon2">
+                    <input type="text" name="" id="" class="searchBar2"   placeholder="I am looking for... ">
+                    <span class="lens2">&#128269;</span>
+                </div>
+            </div>
+            <!--Hero Container--> 
             <div class="connectM">
                 <img src="images/106 2.png" alt="">
                 <p class="ht">Connect to bereau de change easily</p>
@@ -643,60 +580,86 @@
                 <img src="images/Vector 26.png" alt="">
             </div>
            </div>
-            <!---connect to local trader container-->
-           <div class="clt">
+
            <!--what we do circle-->
            <div class="wwdimg">
             <img src="images/Group 1130.png" alt="">
            </div>
-           <!---connect to local trader-->
-           <div class="cltImgAndText">
-            <img src="images/312 2.png" alt="">
-            <p>Connect you to a<br>nearest local trader<br>outlet with your device</p>
-           </div>
-           </div>
-           <!---connect and exchange currencies-->
-           <div class="cae">
-            <img src="images/226 2.png" alt="">
-            <p>Connect and exchange<br>currencies within your<br>community</p>
-           </div>
-           <div class="eru">
-            <img src="images/Group 1130 (1).png" alt="">
-            <p>Exchange<br>rate updates</p>
+           <!--Top Rated Traders-->
+            <div class="trt">
+                <div class="tr">Top rated traders</div>
+                <div class="trp">NGN/USD=625 NGN/USD=625</div>
+            </div>     
+
            </div>
         </div>
-        <!--world map-->
-        <div class="worldmap">
-            <img src="images/444 2.png" alt="">
-        </div>
-        <!--Top Rated Traders-->
-        <div class="trt">
-            <div class="tr">Top rated traders</div>
-            <div class="trp">NGN/USD=625 NGN/USD=625</div>
-        </div>
+
+
         <!--Traders Images & Names-->
         <div class="traderImgAndName" id="activeTraders">
             <div class="trader1">
-                <img src="images/Rectangle 669.png" alt="">
-                <p>kano Exchange<br>Ibadan, Oyo</p>
+                <div class="traderImage">
+                    <img src="images/Rectangle 669.png" alt="">
+                </div>
+                <p class="exchangeName">Babayro Exchange</p>
+                <p class="exchangeLocation">Ajibode Mokola</p>
                 <a href="./chat.html" class="msgbtn">Message</a>
             </div>
             <div class="trader1">
-                <img src="images/Rectangle 669.png" alt="">
-                <p>kano Exchange<br>Ibadan, Oyo</p>
+                <div class="traderImage">
+                    <img src="images/Rectangle 669.png" alt="">
+                </div>
+                <p class="exchangeName">Babayaro Exchange</p>
+                <p class="exchangeLocation">Ajibode Mokola</p>
                 <a href="./chat.html" class="msgbtn">Message</a>
             </div>
+            <div class="trader1">
+                <div class="traderImage">
+                    <img src="images/Rectangle 669.png" alt="">
+                </div>
+                <p class="exchangeName">Babayaro Exchange</p>
+                <p class="exchangeLocation">Ajibode Mokola</p>
+                <a href="./chat.html" class="msgbtn">Message</a>
+            </div>
+            <div class="trader1">
+                <div class="traderImage">
+                    <img src="images/Rectangle 669.png" alt="">
+                </div>
+                <p class="exchangeName">Babayaro Exchange</p>
+                <p class="exchangeLocation">Ajibode Mokola</p>
+                <a href="./chat.html" class="msgbtn">Message</a>
+            </div>
+            <div class="trader1">
+                <div class="traderImage">
+                    <img src="images/Rectangle 669.png" alt="">
+                </div>
+                <p class="exchangeName">Babayaro Exchange</p>
+                <p class="exchangeLocation">Ajibode Mokola</p>
+                <a href="./chat.html" class="msgbtn">Message</a>
+            </div>
+            <div class="trader1">
+                <div class="traderImage">
+                    <img src="images/Rectangle 669.png" alt="">
+                </div>
+                <p class="exchangeName">Babayaro Exchange</p>
+                <p class="exchangeLocation">Ajibode Mokola</p>
+                <a href="./chat.html" class="msgbtn">Message</a>
+            </div>
+            
         </div>
         <!--Button to see all traders-->
         <div class="seeall">
-            <a href="./activeVendors.html" class="seeAll">see all</a>
+            <a href="./activeVendors.html" class="seeAll">
+                <span>Show more</span>
+                <span>&#10230;</span>
+            </a>
         </div>
         <!--About us container-->
+        <div class="Atitle">
+            <h1 id="about">About</h1>
+        </div>
         <div class="Aimg">
             <img src="images/Group 1137.png" alt="">
-        </div>
-        <div class="Atitle">
-            <h2 id="about">About</h2>
         </div>
         <div class="Atext">
                 <p>
@@ -758,10 +721,58 @@
                 <a href="#" class="fl">Our resources</a>
             </div>
         </div>
-    </div>
 </div>
     
 <script>
+const searchIcon = document.getElementById("search-icon");
+const searchBar = document.getElementById("search-bar");
+
+searchIcon.addEventListener("click", (event) => {
+    searchBar.classList.toggle("hidden"); // Toggle visibility
+    searchBar.style.display ='flex';
+    event.stopPropagation(); // Prevent click from bubbling to body
+});
+
+document.body.addEventListener("click", (event) => {
+    if (!searchBar.classList.contains("hidden")) {
+        searchBar.classList.add("hidden"); // Hide when clicking outside
+    searchBar.style.display ='none';
+
+    }
+});
+
+// Prevent the search bar from hiding when clicked
+searchBar.addEventListener("click", (event) => {
+    event.stopPropagation();
+});
+
+
+// toggle function for mobile mode
+const searchIcon2 = document.getElementById("search-icon2");
+const searchBar2 = document.getElementById("search-bar2");
+
+searchIcon2.addEventListener("click", (event) => {
+    searchBar2.classList.toggle("hidden2"); // Toggle visibility
+    searchBar2.style.display ='flex';
+    event.stopPropagation(); // Prevent click from bubbling to body
+});
+
+document.body.addEventListener("click", (event) => {
+    if (!searchBar2.classList.contains("hidden2")) {
+        searchBar2.classList.add("hidden2"); // Hide when clicking outside
+    searchBar2.style.display ='none';
+
+    }
+});
+
+// Prevent the search bar from hiding when clicked
+searchBar2.addEventListener("click", (event) => {
+    event.stopPropagation();
+});
+
+
+
+
     // Conversion rate (1 USD = 1600 NGN,we can adjust this rate as needed)
     const exchangeRate = 1600;
   
@@ -832,7 +843,7 @@
         document.getElementById('container').style.zIndex = -10;
     }
     
-  </script>
+</script>
 
 
 
