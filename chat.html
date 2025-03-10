@@ -151,7 +151,7 @@
                 <img src="images/Group 1051.png" alt="">
             </div>
             <img src="images/flag-7.png" alt="" class="flagUser">
-            <img src="images/Group 1071.png" alt="" class="selectOpt">
+            <img src="images/Group 1071.png" alt="" class="selectOpt" onclick="openMenu()">
         </div>
         <!--message div-->
         <div class="chatMessages" id="chat2" >
@@ -175,6 +175,27 @@
             <img src="images/Union.svg" onclick="sendMessage2()" id='m2' alt="" class="chatMsgBtn">
             <img src="images/Union.svg" onclick="sendAudio2()" id='a2' alt="" class="chatMsgBtn">
             <img src="images/Union.svg" onclick="sendFile2()" id="f2" alt=""  class="chatMsgBtn">
+        </div>
+    </div>
+    <!--Side bar showing history of people you chatted with-->
+    <div id="sidebar" class="sidebar" style="top:0px; position: absolute;">
+        <div class="sd">
+            <div class="chatHd">
+                <span>History</span>
+                <span class="close-btn" onclick="closeMenu()"> &#x2716; </span> <!-- X Button -->
+            </div>
+            <div class="Hname">
+                <p class="contactFLetter">F</p>
+                <p>Fashola Tunji</p>
+            </div>
+            <div class="Hname">
+                <p class="contactFLetter">G</p>
+                <p>God's Favour</p>
+            </div>
+            <div class="Hname">
+                <p class="contactFLetter">S</p>
+                <p>Stephen Olayiwola</p>
+            </div>
         </div>
     </div>
 </div>
@@ -424,7 +445,13 @@ function redirectToChats(){
         chat2.scrollTop = chat2.scrollHeight;
     }
 
+    function openMenu() {
+    document.getElementById("sidebar").style.left = "0";
+}
 
+function closeMenu() {
+    document.getElementById("sidebar").style.left = "-250px";
+}
 
 </script>
 </body>

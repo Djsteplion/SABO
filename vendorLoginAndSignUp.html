@@ -9,7 +9,7 @@
 <body>
     <!--Navigation Bar container-->
     <div class="navbar">
-        <img src="images\saboo.png" alt="Sabo-Logo" class="Sabo-Logo">
+        <img src="images\saboo.png" alt="Sabo-Logo" class="Sabo-Logo" onclick="redirectToChats()">
         <div class="signOptions">
             <p class="signIn" onclick="showSignInForm()">Sign in</p>
             <p class="signUp" onclick="showSignUpForm()">Sign up</p>
@@ -135,6 +135,10 @@
         </div>
 
     <script>
+    function redirectToChats(){
+        window.location.href = "./index.html";
+    }
+
     var showSignUpForm = () => {
         document.getElementById('signInCont1').style.display = 'none';
         document.getElementById('signUpCont1').style.display = 'block';
