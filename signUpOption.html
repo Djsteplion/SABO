@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SABO || Sign-up Options</title>
+
+    <style>
+    :root{
+    --body-pl: 35px;
+    --txt-color-primary: rgba(8,41,124,1);
+    }
+
+    .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    border-bottom: 1px solid rgba(8,41,124,1);
+    background-color: white;
+    }
+
+   .Sabo-Logo{
+    width: 8%;
+    }
+
+    .exit{
+        font-size: 20px;
+        color: var(--txt-color-primary);
+        background-color: white;
+        padding: 14px 20px;
+        border-radius: 100%;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        transition: 500ms;
+    }
+
+    .exit:hover{
+        cursor: pointer;
+        color: white;
+        background-color: var(--txt-color-primary);
+    }
+
+    .signInCont{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: calc(100vh - 30px); /* full height minus navbar height */
+    margin-top: 10px;
+    margin-bottom: 15px;
+   }
+
+   .signInCont{
+        padding: 10px 15px;
+    }
+
+    .signInOptCont{
+    background-color:white ;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 50px;
+    font-family: 'monteserrat';
+    border-radius: 10px;
+    width: 800px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .ct .selection{
+        color: black;
+        border: 1px solid var(--txt-color-primary);
+        padding: 10px 30px;
+        border-radius: 8px;
+        font-size: 20px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+   }
+
+   .selection:hover{
+        cursor: pointer;
+        transition: 500ms;
+        background-color: var(--txt-color-primary);
+        color: white;
+   }
+
+   .selected {
+        background-color: var(--txt-color-primary);
+        color: white;
+        transition: 500ms;
+    }
+
+   .signUpAsCont{
+        width: inherit;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+   }
+
+   .confirmationDiv{
+        width: inherit;
+        display: flex;
+        justify-content: flex-end;
+   }
+
+   .cofirmate{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+   }
+
+   .cancel{
+        font-size:14px;
+   }
+
+   .cancel:hover{
+        cursor: pointer;
+        transition: 400ms;
+        font-size: 16px;
+   }
+
+   .confirm{
+        margin-left: 50px;
+        border: 0.1px solid var(--txt-color-primary);
+        background-color: var(--txt-color-primary);
+        font-size: 14px;
+        padding: 10px 28px;
+        border-radius: 5px;
+        color: white;
+        transition: 500ms;
+   }
+
+   .confirm:hover{
+        cursor: pointer;
+        color: var(--txt-color-primary);
+        background-color: transparent;
+   }
+
+   @media screen and (max-width:700px){
+    .exit{
+        font-size: 10px;
+        color: var(--txt-color-primary);
+        background-color: white;
+        padding: 7px 10px;
+        border-radius: 100%;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        transition: 500ms;
+        margin-bottom: 4px;
+    }
+
+    .signInOptCont{
+    padding: 20px 50px;
+    width: 180px;
+    height: 250px;
+   }
+
+   .ct .selection{
+        padding: 5px 15px;
+        font-size: 12px;
+        margin-bottom: 8px;
+        border-radius: 3px;
+   }
+
+   .confirmationDiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+   }
+
+   .cofirmate{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+   }
+
+   .confirm{
+        margin-left: 10px;
+   }
+
+
+
+   }
+   
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="images\saboo.png" alt="Sabo-Logo" class="Sabo-Logo" onclick="redirectToChats()">
+        <div class="exit" onclick="redirectToChats()">&#8617;</div>
+    </div>
+
+    <div class="signInCont">
+        <div class="signInOptCont">
+            <div class="signUpAsCont">
+                <h2>Sign Up as</h2>
+                <div class="ct">
+                    <div class="selection" id="trader" onclick="selectRole('trader')">Trader</div>
+                    <div class="selection" id="user"   onclick="selectRole('user')">Customer</div>
+                </div>
+            </div>
+            <div class="confirmationDiv">
+                <div class="cofirmate">
+                    <div class="cancel" onclick="cancelSelection()">Cancel</div>
+                    <div class="confirm" onclick="confirmSelection()">Confirm</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function redirectToChats(){
+            window.location.href = "./index.html";
+        }
+
+        let selectedRole = null; 
+
+        function selectRole(role) {
+         // Reset previous selection
+        document.getElementById("user").classList.remove("selected");
+        document.getElementById("trader").classList.remove("selected");
+
+        // Highlight selected role
+        document.getElementById(role).classList.add("selected");
+        selectedRole = role;
+        }
+
+        function confirmSelection() {
+            if (selectedRole === "user") {
+                window.location.href = "./userSignInAndSignUp.html"; 
+            } else if (selectedRole === "trader") {
+                window.location.href = "./vendorLoginAndSignUp.html"; 
+            } else {
+                alert("Please select a role first!");
+            }
+        }
+
+        function cancelSelection() {
+            document.getElementById("user").classList.remove("selected");
+            document.getElementById("trader").classList.remove("selected");
+            selectedRole = null;
+        }
+        
+    </script>
+</body>
+</html>
