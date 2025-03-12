@@ -742,7 +742,7 @@
 
     .msgbtn:hover{
         color: white;
-        background-color: blue;
+        background-color: var(--txt-color-primary);
         transition: 400ms;
         cursor: pointer;
     }
