@@ -4,10 +4,16 @@
  
  /* Card Slider - Swiper */
  var cardSlider = new Swiper('.card-slider', {
-    autoplay: {
-        delay: 2000,
-        disableOnInteraction: false
-    },
+   autoplay: {
+    delay: 0, // No delay between slides
+    disableOnInteraction: false, // Keeps running even if touched
+  },
+  speed: 5000, // Slow and smooth sliding (increase for more smoothness)
+  slidesPerView: "auto", // Ensures a continuous effect
+  freeMode: true, // Allows free movement
+  freeModeMomentum: true, // Enables momentum for a smooth glide
+  freeModeMomentumRatio: 0.5, // Adjust for better smoothness
+  grabCursor: true, // Gives a better UX
 
     pagination: {
        el: '.swiper-pagination',
