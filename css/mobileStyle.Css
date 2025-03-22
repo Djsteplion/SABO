@@ -215,6 +215,9 @@
         align-items: center;
         padding: 8px 4px 0px 4px;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        margin-bottom: 10px;
+        z-index: 10;
     }
 
     .navbarlinkM1{
@@ -699,8 +702,8 @@
 
     .Ess{
         background-color: white;
-        margin: 17px 4px 0px 4px;
-        padding: 4px;
+        margin: 17px 9px 0px 9px;
+        padding: 5px;
         padding-bottom: 5px;
         padding-top: 10px;
         border-top-left-radius: 5px;
