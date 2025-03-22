@@ -6,6 +6,17 @@
         --txt-primary-fontsize: 11px;
     }
 
+    .saboLog{
+        width: 45px;
+        height: 15px;
+    }
+
+    .saboLogAnim{
+        width: 40px;
+        height: 40px;
+        margin-bottom: 14px;
+    }
+
     .container{
         display: none;
     }
@@ -202,13 +213,13 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 8px 4px 12px 4px;
+        padding: 8px 4px 0px 4px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     }
 
     .navbarlinkM1{
         display: flex;
         align-items: center;
-
     }
 
     .navbarlinkM2{
@@ -254,7 +265,7 @@
         color: white!important;
         background-color: var(--txt-color-primary);
         padding: 4px;
-        margin-left: 2px;
+        margin-left: 0px;
         border-radius: 3px;
         border: 0.5px solid var(--txt-color-primary) ;
         font-size: 10px;
@@ -573,7 +584,7 @@
 
     .exs3{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
     }
 
@@ -585,8 +596,89 @@
         font-size: 10px;
     }
 
-    .Ex1, .Ex2, .Ex3{
-        width: 30%;
+    .Ex1{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: white;
+        border: 1px solid transparent;
+        padding: 10px 5px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        width: inherit;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        padding-left: 10px;
+    }
+
+    .Ex1a{
+        width: 50%;
+    }
+
+    .Ex1b{
+        width: 50%;
+        margin-left: 10px;
+    }
+
+    .Ex1b img{
+        width: 120px;
+        height: 100px;
+    }
+
+    .Ex2{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: white;
+        border: 1px solid transparent;
+        padding: 10px 5px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        width: inherit;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        padding-left: 10px;
+    }
+
+    .Ex2a{
+        width: 50%;
+        margin-left: 20px;
+    }
+
+    .Ex2b{
+        width: 50%;
+    }
+
+    .Ex2b img{
+        width: 120px;
+        height: 100px;
+    }
+
+    .Ex3{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: white;
+        border: 1px solid transparent;
+        padding: 10px 5px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        width: inherit;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        padding-left: 10px;
+    }
+
+    .Ex3a{
+        width: 50%;
+    }
+
+    .Ex3b{
+        width: 50%;
+        margin-left: 10px;
+    }
+
+    .Ex3b img{
+        width: 120px;
+        height: 100px;
     }
 
     .wavyline{
@@ -602,13 +694,17 @@
 
     .wwdimg{
         text-align: center;
-        margin-top: -45px;
+        margin-top: 10x;
     }
 
     .Ess{
         background-color: white;
-        margin: 17px 15px 0px 15px;
-        padding: 8px;
+        margin: 17px 4px 0px 4px;
+        padding: 4px;
+        padding-bottom: 5px;
+        padding-top: 10px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
     }
 
      .clt{
@@ -648,25 +744,45 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin-top: -25px;
-        border-top: 0.5px solid var(--txt-color-primary);
-        border-bottom: 0.5px solid var(--txt-color-primary);
+        margin-top:0px;
         background-color: white;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
     }
 
     .tr{
         border-right: 4px solid var(--txt-color-primary);
         padding-left: 5px;
         padding-right: 5px;
-        padding-top: 25px;
-        padding-bottom: 15px;
+        padding-top: 0px;
+        padding-bottom: 0px;
         color: var(--txt-color-primary);
+        position: absolute;
+        z-index: 100;
+        background-color: white;
+        width:auto;
+    }
+
+    .slider-container {
+	position: relative;
+}
+
+    .swiper-container {
+        position: static;
+        width: 88%;
+        text-align: center; 
+    }
+
+    .swiper-wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .trp{
         padding-left: 10px;
-        padding-top: 25px;
-        padding-bottom: 15px;
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
 
     .traderImgAndName{
@@ -710,7 +826,7 @@
     }
 
     .exchangeLocation{
-        color: green;
+        color: rgba(51, 204, 204, 255);
         font-size: 11px;
         font-weight: 700;
         margin-top: -15px;
@@ -749,7 +865,7 @@
 
     .seeall{
         text-align: right;
-        padding: 4px 30.4px 19px 0px;
+        padding: 4px 9px 19px 0px;
     }
 
     .seeAll{
@@ -764,6 +880,11 @@
 
     .Aimg{
         text-align: center;
+    }
+
+    .Aimg img{
+        width: 300px;
+        height: 215px;
     }
 
     .Atitle{
@@ -795,6 +916,11 @@
         margin-top: 15px;
     }
 
+    .Gimg img{
+        width: 200px;
+        height: 100px;
+    }
+
     .Gtxt1{
         text-align: center;
         padding: 10px 45px;
@@ -805,6 +931,11 @@
     .Gimg2{
         text-align: center;
         margin-top: 15px;
+    }
+
+    .Gimg2 img{
+        width: 150px;
+        height: 100px;
     }
 
     .Gtxt2{
